@@ -1,5 +1,3 @@
-# TEAM app - Web App From Scratch @cmda-minor-web 2023 - 2024
-
 # DuckAngels
 
 ## Intro
