@@ -1,38 +1,1650 @@
 {
-    "teamName": "{naam van je team}",
+    "teamName": "Duck Angles",
     "members": [
-        {
-            "name" : "{teamlid 1}",
-            "personalPage" : "https://pad/naar/de/app/van/teamlid-1"
-        },
-        {
-            "name" : "{teamlid 2}",
-            "personalPage" : "https://pad/naar/de/app/van/teamlid-2"
-        },
-        {
-            "name" : "{teamlid 3}",
-            "personalPage" : "https://pad/naar/de/app/van/teamlid-3"
-        },
-        {
-            "name" : "{teamlid 4}",
-            "personalPage" : "https://pad/naar/de/app/van/teamlid-4"
-        },
-        {
-            "name" : "{teamlid 5}",
-            "personalPage" : "https://pad/naar/de/app/van/teamlid-5"
-        },
-    ],
-
-
-
-
-    
-    "pages" : [{
-        "home" : "Welkom",
-        "detail" : "Detail van"
-    }],
-    "otherstuff" : [{
-        "feel" : "free",
-        "to" : "expereriment"
-    }]
-}
+      {
+        "name": "Max",
+        "personalPage": "https://github.com/maxstrikkers/web-app-from-scratch-2324",
+        "geboortedatum": "08-04-2000",
+        "favoriet_genre": "Techno",
+        "image": "./public/img/max.jpeg",
+        "woonplaats": "Amstelveen",
+        "tracks": [
+          {
+          "album": {
+            "genre": "Techno",
+            "album_type": "single",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4Rat60SKnFgSivmiwMh25U"
+                },
+                "id": "4Rat60SKnFgSivmiwMh25U",
+                "name": "Raxeller",
+                "type": "artist",
+                "uri": "spotify:artist:4Rat60SKnFgSivmiwMh25U"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/59n5xwDqMK7iVHav60Yeay"
+            },
+            "id": "59n5xwDqMK7iVHav60Yeay",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b27326e24be5d47f1dbaa5b308e2",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e0226e24be5d47f1dbaa5b308e2",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d0000485126e24be5d47f1dbaa5b308e2",
+                "width": 64
+              }
+            ],
+            "is_playable": true,
+            "name": "Crying in your sleep",
+            "release_date": "2022-04-14",
+            "release_date_precision": "day",
+            "total_tracks": 1,
+            "type": "album",
+            "uri": "spotify:album:59n5xwDqMK7iVHav60Yeay"
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/4Rat60SKnFgSivmiwMh25U"
+              },
+              "id": "4Rat60SKnFgSivmiwMh25U",
+              "name": "Raxeller",
+              "type": "artist",
+              "uri": "spotify:artist:4Rat60SKnFgSivmiwMh25U"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 355976,
+          "explicit": false,
+          "external_ids": {
+            "isrc": "QZMHM2288868"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/2FyJOVgdKNOQMF8zFxgCPN"
+          },
+          "id": "2FyJOVgdKNOQMF8zFxgCPN",
+          "is_local": false,
+          "is_playable": true,
+          "name": "Crying in your sleep",
+          "popularity": 54,
+          "preview_url": "https://p.scdn.co/mp3-preview/f934b6a807986e9d567611abd73b7c118a1ff13c?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+          "track_number": 1,
+          "type": "track",
+          "uri": "spotify:track:2FyJOVgdKNOQMF8zFxgCPN"
+          },
+          {
+          "album": {
+            "genre": "Techno",
+            "album_type": "single",
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/5WxRbGZ5RbPIvlmDudz0up"
+                },
+                "id": "5WxRbGZ5RbPIvlmDudz0up",
+                "name": "Toxic Machinery",
+                "type": "artist",
+                "uri": "spotify:artist:5WxRbGZ5RbPIvlmDudz0up"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/6i6iSWkMFtSid3hfcwD8bG"
+                },
+                "id": "6i6iSWkMFtSid3hfcwD8bG",
+                "name": "KARAH",
+                "type": "artist",
+                "uri": "spotify:artist:6i6iSWkMFtSid3hfcwD8bG"
+              }
+            ],
+            "external_urls": {
+              "spotify": "https://open.spotify.com/album/5HXj4NWjXX4qzt8A5SkaDg"
+            },
+            "id": "5HXj4NWjXX4qzt8A5SkaDg",
+            "images": [
+              {
+                "height": 640,
+                "url": "https://i.scdn.co/image/ab67616d0000b273dc4009558356d4b8ab3460cb",
+                "width": 640
+              },
+              {
+                "height": 300,
+                "url": "https://i.scdn.co/image/ab67616d00001e02dc4009558356d4b8ab3460cb",
+                "width": 300
+              },
+              {
+                "height": 64,
+                "url": "https://i.scdn.co/image/ab67616d00004851dc4009558356d4b8ab3460cb",
+                "width": 64
+              }
+            ],
+            "is_playable": true,
+            "name": "Industrial Nightmare",
+            "release_date": "2023-12-05",
+            "release_date_precision": "day",
+            "total_tracks": 1,
+            "type": "album",
+            "uri": "spotify:album:5HXj4NWjXX4qzt8A5SkaDg"
+          },
+          "artists": [
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/5WxRbGZ5RbPIvlmDudz0up"
+              },
+              "id": "5WxRbGZ5RbPIvlmDudz0up",
+              "name": "Toxic Machinery",
+              "type": "artist",
+              "uri": "spotify:artist:5WxRbGZ5RbPIvlmDudz0up"
+            },
+            {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/artist/6i6iSWkMFtSid3hfcwD8bG"
+              },
+              "id": "6i6iSWkMFtSid3hfcwD8bG",
+              "name": "KARAH",
+              "type": "artist",
+              "uri": "spotify:artist:6i6iSWkMFtSid3hfcwD8bG"
+            }
+          ],
+          "disc_number": 1,
+          "duration_ms": 211968,
+          "explicit": false,
+          "external_ids": {
+            "isrc": "GBMA22306350"
+          },
+          "external_urls": {
+            "spotify": "https://open.spotify.com/track/7yqJueBmuI7v5MIuQFjuIn"
+          },
+          "id": "7yqJueBmuI7v5MIuQFjuIn",
+          "is_local": false,
+          "is_playable": true,
+          "name": "Industrial Nightmare",
+          "popularity": 39,
+          "preview_url": "https://p.scdn.co/mp3-preview/66e0fbd5ac167399bcf1347f1fccc19b5068f964?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+          "track_number": 1,
+          "type": "track",
+          "uri": "spotify:track:7yqJueBmuI7v5MIuQFjuIn"
+          },
+          {
+            "album": {
+              "genre": "Techno",
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/7eILArMiTFTQf8SEh5fFHK"
+                  },
+                  "id": "7eILArMiTFTQf8SEh5fFHK",
+                  "name": "Sara Landry",
+                  "type": "artist",
+                  "uri": "spotify:artist:7eILArMiTFTQf8SEh5fFHK"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/0jlj1YQPukOtKrLlptcIcE"
+              },
+              "id": "0jlj1YQPukOtKrLlptcIcE",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273e5cea73246c3cda1749d383e",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02e5cea73246c3cda1749d383e",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851e5cea73246c3cda1749d383e",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Riot",
+              "release_date": "2022-06-24",
+              "release_date_precision": "day",
+              "total_tracks": 1,
+              "type": "album",
+              "uri": "spotify:album:0jlj1YQPukOtKrLlptcIcE"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/7eILArMiTFTQf8SEh5fFHK"
+                },
+                "id": "7eILArMiTFTQf8SEh5fFHK",
+                "name": "Sara Landry",
+                "type": "artist",
+                "uri": "spotify:artist:7eILArMiTFTQf8SEh5fFHK"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 379760,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "FRX202255959"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/67kE9zMnBzGLzCEdTKM3Bp"
+            },
+            "id": "67kE9zMnBzGLzCEdTKM3Bp",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Riot",
+            "popularity": 45,
+            "preview_url": "https://p.scdn.co/mp3-preview/af88290a28fae8d2a0bf7d81104cff23ae12c282?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:67kE9zMnBzGLzCEdTKM3Bp"
+          },
+          {
+            "album": {
+              "genre": "Techno",
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5WxRbGZ5RbPIvlmDudz0up"
+                  },
+                  "id": "5WxRbGZ5RbPIvlmDudz0up",
+                  "name": "Toxic Machinery",
+                  "type": "artist",
+                  "uri": "spotify:artist:5WxRbGZ5RbPIvlmDudz0up"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/4GBNRXT2DhUlJuSfw3jq5h"
+              },
+              "id": "4GBNRXT2DhUlJuSfw3jq5h",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b2736dfb87c4dd820e06b0e5b508",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e026dfb87c4dd820e06b0e5b508",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d000048516dfb87c4dd820e06b0e5b508",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Anatomy of a Slut",
+              "release_date": "2023-11-02",
+              "release_date_precision": "day",
+              "total_tracks": 1,
+              "type": "album",
+              "uri": "spotify:album:4GBNRXT2DhUlJuSfw3jq5h"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/5WxRbGZ5RbPIvlmDudz0up"
+                },
+                "id": "5WxRbGZ5RbPIvlmDudz0up",
+                "name": "Toxic Machinery",
+                "type": "artist",
+                "uri": "spotify:artist:5WxRbGZ5RbPIvlmDudz0up"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 289877,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "NL3WT2300014"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1kgYVpgBznSRvLFZghEQLz"
+            },
+            "id": "1kgYVpgBznSRvLFZghEQLz",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Anatomy of a Slut",
+            "popularity": 35,
+            "preview_url": "https://p.scdn.co/mp3-preview/c67d3bf8adfe6227c94eb448449a1a1c32f5751d?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:1kgYVpgBznSRvLFZghEQLz"
+          },
+          {
+            "album": {
+              "genre": "Techno",
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/6fjhNhp9IoeiZpEXq9AT2S"
+                  },
+                  "id": "6fjhNhp9IoeiZpEXq9AT2S",
+                  "name": "Nico Moreno",
+                  "type": "artist",
+                  "uri": "spotify:artist:6fjhNhp9IoeiZpEXq9AT2S"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/7ho4luT8WnYPDC08iuMVEi"
+              },
+              "id": "7ho4luT8WnYPDC08iuMVEi",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273921d57dfe45a60a937b2d9db",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02921d57dfe45a60a937b2d9db",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851921d57dfe45a60a937b2d9db",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "T'as Cru Quoi",
+              "release_date": "2023-12-22",
+              "release_date_precision": "day",
+              "total_tracks": 1,
+              "type": "album",
+              "uri": "spotify:album:7ho4luT8WnYPDC08iuMVEi"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/6fjhNhp9IoeiZpEXq9AT2S"
+                },
+                "id": "6fjhNhp9IoeiZpEXq9AT2S",
+                "name": "Nico Moreno",
+                "type": "artist",
+                "uri": "spotify:artist:6fjhNhp9IoeiZpEXq9AT2S"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 285290,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "FXR752301355"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0734HASfnWUb7fWHn9IZAr"
+            },
+            "id": "0734HASfnWUb7fWHn9IZAr",
+            "is_local": false,
+            "is_playable": true,
+            "name": "T'as Cru Quoi",
+            "popularity": 56,
+            "preview_url": "https://p.scdn.co/mp3-preview/8858b8d79d87b99cb541bb0219466e68e5f2487b?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:0734HASfnWUb7fWHn9IZAr"
+          }
+        ]
+      },
+      {
+        "name": "Xiao Nan",
+        "personalPage": "https://github.com/xiaonanpols21/WAFS-2.0",
+        "geboortedatum": "03-06-2001",
+        "favoriet_genre": "K-Pop",
+        "image": "./public/img/xiaonan.JPG",
+        "woonplaats": "Den Oever",
+        "tracks": [
+          {
+            "album": {
+              "genre": "K-pop",
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"
+                  },
+                  "id": "3Nrfpe0tUJi4K4DXYWgMUX",
+                  "name": "BTS",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Nrfpe0tUJi4K4DXYWgMUX"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/1vhNGBTFoaSTLbHjPGFIlF"
+              },
+              "id": "1vhNGBTFoaSTLbHjPGFIlF",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b2738bd5d941f9ced8e7f9c60dd4",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e028bd5d941f9ced8e7f9c60dd4",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d000048518bd5d941f9ced8e7f9c60dd4",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Wings",
+              "release_date": "2016-10-10",
+              "release_date_precision": "day",
+              "total_tracks": 15,
+              "type": "album",
+              "uri": "spotify:album:1vhNGBTFoaSTLbHjPGFIlF"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"
+                },
+                "id": "3Nrfpe0tUJi4K4DXYWgMUX",
+                "name": "BTS",
+                "type": "artist",
+                "uri": "spotify:artist:3Nrfpe0tUJi4K4DXYWgMUX"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 272537,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "KRA381601904"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3KVOfGrYVjoP1w8T2HVltm"
+            },
+            "id": "3KVOfGrYVjoP1w8T2HVltm",
+            "is_local": false,
+            "is_playable": true,
+            "name": "2! 3!",
+            "popularity": 63,
+            "preview_url": "https://p.scdn.co/mp3-preview/de7a28750b49e5aedc1d860a7d9e81315f58fbb6?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+            "track_number": 14,
+            "type": "track",
+            "uri": "spotify:track:3KVOfGrYVjoP1w8T2HVltm"
+          },
+          {
+            "album": {
+              "genre": "K-pop",
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/0UntV1Bw2hk3fbRrm9eMP6"
+                  },
+                  "id": "0UntV1Bw2hk3fbRrm9eMP6",
+                  "name": "B.I",
+                  "type": "artist",
+                  "uri": "spotify:artist:0UntV1Bw2hk3fbRrm9eMP6"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/6GMYJwaziB4ekv1Y6wCDWS"
+                  },
+                  "id": "6GMYJwaziB4ekv1Y6wCDWS",
+                  "name": "Soulja Boy",
+                  "type": "artist",
+                  "uri": "spotify:artist:6GMYJwaziB4ekv1Y6wCDWS"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/6z2Ij8op0iB16BnmrCy0vH"
+              },
+              "id": "6z2Ij8op0iB16BnmrCy0vH",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b2732f485bcd37d1d6733d324f7d",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e022f485bcd37d1d6733d324f7d",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d000048512f485bcd37d1d6733d324f7d",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "BTBT",
+              "release_date": "2022-05-13",
+              "release_date_precision": "day",
+              "total_tracks": 1,
+              "type": "album",
+              "uri": "spotify:album:6z2Ij8op0iB16BnmrCy0vH"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/0UntV1Bw2hk3fbRrm9eMP6"
+                },
+                "id": "0UntV1Bw2hk3fbRrm9eMP6",
+                "name": "B.I",
+                "type": "artist",
+                "uri": "spotify:artist:0UntV1Bw2hk3fbRrm9eMP6"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/6GMYJwaziB4ekv1Y6wCDWS"
+                },
+                "id": "6GMYJwaziB4ekv1Y6wCDWS",
+                "name": "Soulja Boy",
+                "type": "artist",
+                "uri": "spotify:artist:6GMYJwaziB4ekv1Y6wCDWS"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/5PS3ZZE5bBiZ3Ct9HiRG2B"
+                },
+                "id": "5PS3ZZE5bBiZ3Ct9HiRG2B",
+                "name": "DeVita",
+                "type": "artist",
+                "uri": "spotify:artist:5PS3ZZE5bBiZ3Ct9HiRG2B"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 219549,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "GBKPL2296992"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/4XcxgZSriCYamtIA7BgT7V"
+            },
+            "id": "4XcxgZSriCYamtIA7BgT7V",
+            "is_local": false,
+            "is_playable": true,
+            "name": "BTBT",
+            "popularity": 70,
+            "preview_url": "https://p.scdn.co/mp3-preview/d2a8db5adc616008ce6e2a618c3a6b9e3ae2cc71?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:4XcxgZSriCYamtIA7BgT7V"
+          },
+          {
+            "album": {
+              "genre": "Pop",
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1JLf53adsPkYiAQPir2Fn3"
+                  },
+                  "id": "1JLf53adsPkYiAQPir2Fn3",
+                  "name": "Zoe Clark",
+                  "type": "artist",
+                  "uri": "spotify:artist:1JLf53adsPkYiAQPir2Fn3"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/6lCyj2Uuh9n1J2oZ2rrVZw"
+              },
+              "id": "6lCyj2Uuh9n1J2oZ2rrVZw",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b2734cd8fca74ef649a8415b9c0a",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e024cd8fca74ef649a8415b9c0a",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d000048514cd8fca74ef649a8415b9c0a",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Not to be Dramatic",
+              "release_date": "2023-05-05",
+              "release_date_precision": "day",
+              "total_tracks": 1,
+              "type": "album",
+              "uri": "spotify:album:6lCyj2Uuh9n1J2oZ2rrVZw"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1JLf53adsPkYiAQPir2Fn3"
+                },
+                "id": "1JLf53adsPkYiAQPir2Fn3",
+                "name": "Zoe Clark",
+                "type": "artist",
+                "uri": "spotify:artist:1JLf53adsPkYiAQPir2Fn3"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 170704,
+            "explicit": true,
+            "external_ids": {
+              "isrc": "QZWDW2317828"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/5DfMuKnKjSCBJDL3CbRAet"
+            },
+            "id": "5DfMuKnKjSCBJDL3CbRAet",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Not to be Dramatic",
+            "popularity": 60,
+            "preview_url": "https://p.scdn.co/mp3-preview/9766e13fc3d7d7dc4c2e5ef89a5f3030db6c8343?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:5DfMuKnKjSCBJDL3CbRAet"
+          },
+          {
+            "album": {
+              "genre": "K-pop",
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"
+                  },
+                  "id": "3Nrfpe0tUJi4K4DXYWgMUX",
+                  "name": "BTS",
+                  "type": "artist",
+                  "uri": "spotify:artist:3Nrfpe0tUJi4K4DXYWgMUX"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/6THpewjqJ15ORBJkh5CEYb"
+              },
+              "id": "6THpewjqJ15ORBJkh5CEYb",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b2731fd0a8fc28b2a0a5d9cdc6c6",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e021fd0a8fc28b2a0a5d9cdc6c6",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d000048511fd0a8fc28b2a0a5d9cdc6c6",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "You Never Walk Alone",
+              "release_date": "2017-02-13",
+              "release_date_precision": "day",
+              "total_tracks": 18,
+              "type": "album",
+              "uri": "spotify:album:6THpewjqJ15ORBJkh5CEYb"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"
+                },
+                "id": "3Nrfpe0tUJi4K4DXYWgMUX",
+                "name": "BTS",
+                "type": "artist",
+                "uri": "spotify:artist:3Nrfpe0tUJi4K4DXYWgMUX"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 274097,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "KRA381700253"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/2j1fFjWHCI9KJSwcuYAOyF"
+            },
+            "id": "2j1fFjWHCI9KJSwcuYAOyF",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Spring Day",
+            "popularity": 78,
+            "preview_url": "https://p.scdn.co/mp3-preview/e2504a289eb9462a6d08e17ae9ce1fade272ab1f?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+            "track_number": 15,
+            "type": "track",
+            "uri": "spotify:track:2j1fFjWHCI9KJSwcuYAOyF"
+          },
+          {
+            "album": {
+              "genre": "K-pop",
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/250b0Wlc5Vk0CoUsaCY84M"
+                  },
+                  "id": "250b0Wlc5Vk0CoUsaCY84M",
+                  "name": "JENNIE",
+                  "type": "artist",
+                  "uri": "spotify:artist:250b0Wlc5Vk0CoUsaCY84M"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/2Joq37Cjv3ZL7M2faHWe3b"
+              },
+              "id": "2Joq37Cjv3ZL7M2faHWe3b",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b2738513170cd3adda304ddfc1dc",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e028513170cd3adda304ddfc1dc",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d000048518513170cd3adda304ddfc1dc",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "JENNIE Special Single [You & Me]",
+              "release_date": "2023-10-06",
+              "release_date_precision": "day",
+              "total_tracks": 2,
+              "type": "album",
+              "uri": "spotify:album:2Joq37Cjv3ZL7M2faHWe3b"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/250b0Wlc5Vk0CoUsaCY84M"
+                },
+                "id": "250b0Wlc5Vk0CoUsaCY84M",
+                "name": "JENNIE",
+                "type": "artist",
+                "uri": "spotify:artist:250b0Wlc5Vk0CoUsaCY84M"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 179164,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "KRA402300041"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/6gcuJpHu0Ey30D5WR76y98"
+            },
+            "id": "6gcuJpHu0Ey30D5WR76y98",
+            "is_local": false,
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/6xXCn7H2Yl8SDD6jxo5SpN"
+              },
+              "id": "6xXCn7H2Yl8SDD6jxo5SpN",
+              "type": "track",
+              "uri": "spotify:track:6xXCn7H2Yl8SDD6jxo5SpN"
+            },
+            "name": "You & Me",
+            "popularity": 79,
+            "preview_url": "https://p.scdn.co/mp3-preview/3ae0944a15cb993907e7eb99521523594de4f5c5?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:6gcuJpHu0Ey30D5WR76y98"
+          }
+        ]
+      },
+      {
+        "name": "Karenza",
+        "personalPage": "https://github.com/xiaonanpols21/WAFS-2.0",
+        "geboortedatum": "06-01-2003",
+        "favoriet_genre": "Latin",
+        "image": "./public/img/karenza.jpg",
+        "woonplaats": "Amsterdam",
+        "tracks": [
+          {
+            "album": {
+              "genre": "Latin",
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3MHaV05u0io8fQbZ2XPtlC"
+                  },
+                  "id": "3MHaV05u0io8fQbZ2XPtlC",
+                  "name": "Prince Royce",
+                  "type": "artist",
+                  "uri": "spotify:artist:3MHaV05u0io8fQbZ2XPtlC"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/5zEFCJy9kAyD8rMbBESdYh"
+              },
+              "id": "5zEFCJy9kAyD8rMbBESdYh",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273a484690118ec2c7a2e2ae124",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02a484690118ec2c7a2e2ae124",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851a484690118ec2c7a2e2ae124",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Prince Royce",
+              "release_date": "2010",
+              "release_date_precision": "year",
+              "total_tracks": 10,
+              "type": "album",
+              "uri": "spotify:album:5zEFCJy9kAyD8rMbBESdYh"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3MHaV05u0io8fQbZ2XPtlC"
+                },
+                "id": "3MHaV05u0io8fQbZ2XPtlC",
+                "name": "Prince Royce",
+                "type": "artist",
+                "uri": "spotify:artist:3MHaV05u0io8fQbZ2XPtlC"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 211453,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "US7YG0903381"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0u4N6w5lBw5xMrzJitRWUo"
+            },
+            "id": "0u4N6w5lBw5xMrzJitRWUo",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Corazón Sin Cara",
+            "popularity": 77,
+            "preview_url": "https://p.scdn.co/mp3-preview/28c2c4ab6e53cc3bdd30dde88402d46f4bddbc47?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+            "track_number": 2,
+            "type": "track",
+            "uri": "spotify:track:0u4N6w5lBw5xMrzJitRWUo"
+          },
+          {
+            "album": {
+              "genre": "Latin",
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1qto4hHid1P71emI6Fd8xi"
+                  },
+                  "id": "1qto4hHid1P71emI6Fd8xi",
+                  "name": "Aventura",
+                  "type": "artist",
+                  "uri": "spotify:artist:1qto4hHid1P71emI6Fd8xi"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/5QdYO6Q2POaG7dhVIsJeWd"
+              },
+              "id": "5QdYO6Q2POaG7dhVIsJeWd",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273e1afa83bd73aa80c0ff0ee34",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02e1afa83bd73aa80c0ff0ee34",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851e1afa83bd73aa80c0ff0ee34",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "We Broke The Rules",
+              "release_date": "2002-06-01",
+              "release_date_precision": "day",
+              "total_tracks": 10,
+              "type": "album",
+              "uri": "spotify:album:5QdYO6Q2POaG7dhVIsJeWd"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1qto4hHid1P71emI6Fd8xi"
+                },
+                "id": "1qto4hHid1P71emI6Fd8xi",
+                "name": "Aventura",
+                "type": "artist",
+                "uri": "spotify:artist:1qto4hHid1P71emI6Fd8xi"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1seU2dut8PjGSZbgrPl7by"
+                },
+                "id": "1seU2dut8PjGSZbgrPl7by",
+                "name": "Judy Santos",
+                "type": "artist",
+                "uri": "spotify:artist:1seU2dut8PjGSZbgrPl7by"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 254720,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "US83W0500074"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/65H6t1WQBim6q93yM8fEwn"
+            },
+            "id": "65H6t1WQBim6q93yM8fEwn",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Obsesion",
+            "popularity": 79,
+            "preview_url": "https://p.scdn.co/mp3-preview/fc9c4e31536a1e7f9584ce8c97be295b7de9bac9?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:65H6t1WQBim6q93yM8fEwn"
+          },
+           {
+            "album": {
+              "genre": "Latin",
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3nlpTZci9O5W8RsNoNH559"
+                  },
+                  "id": "3nlpTZci9O5W8RsNoNH559",
+                  "name": "Juan Luis Guerra 4.40",
+                  "type": "artist",
+                  "uri": "spotify:artist:3nlpTZci9O5W8RsNoNH559"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/2LqYd5gIJxEvG5md8kGeyL"
+              },
+              "id": "2LqYd5gIJxEvG5md8kGeyL",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273552ae7f465c58a22f295fe5b",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02552ae7f465c58a22f295fe5b",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851552ae7f465c58a22f295fe5b",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Asondeguerra",
+              "release_date": "2010-01-01",
+              "release_date_precision": "day",
+              "total_tracks": 11,
+              "type": "album",
+              "uri": "spotify:album:2LqYd5gIJxEvG5md8kGeyL"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3nlpTZci9O5W8RsNoNH559"
+                },
+                "id": "3nlpTZci9O5W8RsNoNH559",
+                "name": "Juan Luis Guerra 4.40",
+                "type": "artist",
+                "uri": "spotify:artist:3nlpTZci9O5W8RsNoNH559"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 191106,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "USEL11000018"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/6IfMD01z39P15HKezjdaMP"
+            },
+            "id": "6IfMD01z39P15HKezjdaMP",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Bachata En Fukuoka",
+            "popularity": 76,
+            "preview_url": "https://p.scdn.co/mp3-preview/32e2d2a6c356cdac22e8f357f14fd4f811c51e11?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+            "track_number": 5,
+            "type": "track",
+            "uri": "spotify:track:6IfMD01z39P15HKezjdaMP"
+          },
+           {
+            "album": {
+              "genre": "Latin",
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1qto4hHid1P71emI6Fd8xi"
+                  },
+                  "id": "1qto4hHid1P71emI6Fd8xi",
+                  "name": "Aventura",
+                  "type": "artist",
+                  "uri": "spotify:artist:1qto4hHid1P71emI6Fd8xi"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/3dCEXNx36W29EYCMUAx5p5"
+              },
+              "id": "3dCEXNx36W29EYCMUAx5p5",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b2737ccd22cc18d53dd443c69d43",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e027ccd22cc18d53dd443c69d43",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d000048517ccd22cc18d53dd443c69d43",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "God's Project",
+              "release_date": "2005-04-26",
+              "release_date_precision": "day",
+              "total_tracks": 15,
+              "type": "album",
+              "uri": "spotify:album:3dCEXNx36W29EYCMUAx5p5"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1qto4hHid1P71emI6Fd8xi"
+                },
+                "id": "1qto4hHid1P71emI6Fd8xi",
+                "name": "Aventura",
+                "type": "artist",
+                "uri": "spotify:artist:1qto4hHid1P71emI6Fd8xi"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 263346,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "US83W0500034"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/1SaEt8dwTuLDzenUu5BqI6"
+            },
+            "id": "1SaEt8dwTuLDzenUu5BqI6",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Un Beso",
+            "popularity": 76,
+            "preview_url": "https://p.scdn.co/mp3-preview/89008c144b2ada597dfc6700b88778cf740bf255?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+            "track_number": 10,
+            "type": "track",
+            "uri": "spotify:track:1SaEt8dwTuLDzenUu5BqI6"
+          },
+          {
+            "album": {
+              "genre": "Latin",
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/5lwmRuXgjX8xIwlnauTZIP"
+                  },
+                  "id": "5lwmRuXgjX8xIwlnauTZIP",
+                  "name": "Romeo Santos",
+                  "type": "artist",
+                  "uri": "spotify:artist:5lwmRuXgjX8xIwlnauTZIP"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/6a3RDPcFamZvFCi8VeXWkK"
+              },
+              "id": "6a3RDPcFamZvFCi8VeXWkK",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b2731d6d3d544ca5b46453fafbb6",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e021d6d3d544ca5b46453fafbb6",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d000048511d6d3d544ca5b46453fafbb6",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Fórmula Vol. 1 (Deluxe Edition)",
+              "release_date": "2012-08-27",
+              "release_date_precision": "day",
+              "total_tracks": 20,
+              "type": "album",
+              "uri": "spotify:album:6a3RDPcFamZvFCi8VeXWkK"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/5lwmRuXgjX8xIwlnauTZIP"
+                },
+                "id": "5lwmRuXgjX8xIwlnauTZIP",
+                "name": "Romeo Santos",
+                "type": "artist",
+                "uri": "spotify:artist:5lwmRuXgjX8xIwlnauTZIP"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/23zg3TcAtWQy7J6upgbUnj"
+                },
+                "id": "23zg3TcAtWQy7J6upgbUnj",
+                "name": "USHER",
+                "type": "artist",
+                "uri": "spotify:artist:23zg3TcAtWQy7J6upgbUnj"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 252253,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "USSD11100255"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0jr6tT2vc4cIFPHb6wufG3"
+            },
+            "id": "0jr6tT2vc4cIFPHb6wufG3",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Promise (feat. Usher)",
+            "popularity": 73,
+            "preview_url": "https://p.scdn.co/mp3-preview/60f8555a10c67bb6801f9ea842ba5d262e3b6645?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+            "track_number": 6,
+            "type": "track",
+            "uri": "spotify:track:0jr6tT2vc4cIFPHb6wufG3"
+          }
+        ]
+      },
+      {
+        "name": "Hidde",
+        "personalPage": "https://github.com/xiaonanpols21/WAFS-2.0",
+        "geboortedatum": "25-03-1999",
+        "favoriet_genre": "Hip-Hop",
+        "image": "./public/img/hidde.jpg",
+        "woonplaats": "Amsterdam",
+        "tracks": [
+          {
+            "album": {
+              "genre": "Hip-hop",
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/33W1pnW9zScZtYTnAoWnOT"
+                  },
+                  "id": "33W1pnW9zScZtYTnAoWnOT",
+                  "name": "Mr. Probz",
+                  "type": "artist",
+                  "uri": "spotify:artist:33W1pnW9zScZtYTnAoWnOT"
+                },
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3jK9MiCrA42lLAdMGUZpwa"
+                  },
+                  "id": "3jK9MiCrA42lLAdMGUZpwa",
+                  "name": "Anderson .Paak",
+                  "type": "artist",
+                  "uri": "spotify:artist:3jK9MiCrA42lLAdMGUZpwa"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/2FlJ62X79IvqPB5S1aJuUr"
+              },
+              "id": "2FlJ62X79IvqPB5S1aJuUr",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b27309c6e0ec1172dacb762f6478",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e0209c6e0ec1172dacb762f6478",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d0000485109c6e0ec1172dacb762f6478",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Gone",
+              "release_date": "2017-09-01",
+              "release_date_precision": "day",
+              "total_tracks": 1,
+              "type": "album",
+              "uri": "spotify:album:2FlJ62X79IvqPB5S1aJuUr"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/33W1pnW9zScZtYTnAoWnOT"
+                },
+                "id": "33W1pnW9zScZtYTnAoWnOT",
+                "name": "Mr. Probz",
+                "type": "artist",
+                "uri": "spotify:artist:33W1pnW9zScZtYTnAoWnOT"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3jK9MiCrA42lLAdMGUZpwa"
+                },
+                "id": "3jK9MiCrA42lLAdMGUZpwa",
+                "name": "Anderson .Paak",
+                "type": "artist",
+                "uri": "spotify:artist:3jK9MiCrA42lLAdMGUZpwa"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 220454,
+            "explicit": true,
+            "external_ids": {
+              "isrc": "NLB8R1700008"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/3VoohMZ7fXyNX2xRZFHSOp"
+            },
+            "id": "3VoohMZ7fXyNX2xRZFHSOp",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Gone",
+            "popularity": 39,
+            "preview_url": "https://p.scdn.co/mp3-preview/292f2b59e641dd61479d174377c8b4e1acd1e7ca?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:3VoohMZ7fXyNX2xRZFHSOp"
+          },
+          {
+            "album": {
+              "genre": "Pop",
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
+                  },
+                  "id": "246dkjvS1zLTtiykXe5h60",
+                  "name": "Post Malone",
+                  "type": "artist",
+                  "uri": "spotify:artist:246dkjvS1zLTtiykXe5h60"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/6trNtQUgC8cgbWcqoMYkOR"
+              },
+              "id": "6trNtQUgC8cgbWcqoMYkOR",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273b1c4b76e23414c9f20242268",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02b1c4b76e23414c9f20242268",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851b1c4b76e23414c9f20242268",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "beerbongs & bentleys",
+              "release_date": "2018-04-27",
+              "release_date_precision": "day",
+              "total_tracks": 18,
+              "type": "album",
+              "uri": "spotify:album:6trNtQUgC8cgbWcqoMYkOR"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/246dkjvS1zLTtiykXe5h60"
+                },
+                "id": "246dkjvS1zLTtiykXe5h60",
+                "name": "Post Malone",
+                "type": "artist",
+                "uri": "spotify:artist:246dkjvS1zLTtiykXe5h60"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 231266,
+            "explicit": true,
+            "external_ids": {
+              "isrc": "USUM71805170"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/7dt6x5M1jzdTEt8oCbisTK"
+            },
+            "id": "7dt6x5M1jzdTEt8oCbisTK",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Better Now",
+            "popularity": 84,
+            "preview_url": "https://p.scdn.co/mp3-preview/1aa169aa2705c55c3c5e8d93dea91b682225ae59?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+            "track_number": 9,
+            "type": "track",
+            "uri": "spotify:track:7dt6x5M1jzdTEt8oCbisTK"
+          },
+          {
+            "album": {
+              "genre": "Hip-hop",
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/3ycxRkcZ67ALN3GQJ57Vig"
+                  },
+                  "id": "3ycxRkcZ67ALN3GQJ57Vig",
+                  "name": "Masego",
+                  "type": "artist",
+                  "uri": "spotify:artist:3ycxRkcZ67ALN3GQJ57Vig"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/1S0yIZRDiFmqCQyTIEV175"
+              },
+              "id": "1S0yIZRDiFmqCQyTIEV175",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b273472da7a855e1446b36bcb83b",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e02472da7a855e1446b36bcb83b",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d00004851472da7a855e1446b36bcb83b",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Studying Abroad: Extended Stay",
+              "release_date": "2020-11-13",
+              "release_date_precision": "day",
+              "total_tracks": 11,
+              "type": "album",
+              "uri": "spotify:album:1S0yIZRDiFmqCQyTIEV175"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/3ycxRkcZ67ALN3GQJ57Vig"
+                },
+                "id": "3ycxRkcZ67ALN3GQJ57Vig",
+                "name": "Masego",
+                "type": "artist",
+                "uri": "spotify:artist:3ycxRkcZ67ALN3GQJ57Vig"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4Gso3d4CscCijv0lmajZWs"
+                },
+                "id": "4Gso3d4CscCijv0lmajZWs",
+                "name": "Don Toliver",
+                "type": "artist",
+                "uri": "spotify:artist:4Gso3d4CscCijv0lmajZWs"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 228453,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "USUM72021142"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/0bkTdkWwGk3OGFX0afD3Wj"
+            },
+            "id": "0bkTdkWwGk3OGFX0afD3Wj",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Mystery Lady",
+            "popularity": 73,
+            "preview_url": "https://p.scdn.co/mp3-preview/10dca6f8383fc77253643230087268cfd097c5ac?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+            "track_number": 3,
+            "type": "track",
+            "uri": "spotify:track:0bkTdkWwGk3OGFX0afD3Wj"
+          },
+          {
+            "album": {
+              "genre": "Pop",
+              "album_type": "album",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ"
+                  },
+                  "id": "1Xyo4u8uXC1ZmMpatF05PJ",
+                  "name": "The Weeknd",
+                  "type": "artist",
+                  "uri": "spotify:artist:1Xyo4u8uXC1ZmMpatF05PJ"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/2ODvWsOgouMbaA5xf0RkJe"
+              },
+              "id": "2ODvWsOgouMbaA5xf0RkJe",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b2734718e2b124f79258be7bc452",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e024718e2b124f79258be7bc452",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d000048514718e2b124f79258be7bc452",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Starboy",
+              "release_date": "2016-11-25",
+              "release_date_precision": "day",
+              "total_tracks": 18,
+              "type": "album",
+              "uri": "spotify:album:2ODvWsOgouMbaA5xf0RkJe"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/1Xyo4u8uXC1ZmMpatF05PJ"
+                },
+                "id": "1Xyo4u8uXC1ZmMpatF05PJ",
+                "name": "The Weeknd",
+                "type": "artist",
+                "uri": "spotify:artist:1Xyo4u8uXC1ZmMpatF05PJ"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/4tZwfgrHOc3mvqYlEYSvVi"
+                },
+                "id": "4tZwfgrHOc3mvqYlEYSvVi",
+                "name": "Daft Punk",
+                "type": "artist",
+                "uri": "spotify:artist:4tZwfgrHOc3mvqYlEYSvVi"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 230453,
+            "explicit": true,
+            "external_ids": {
+              "isrc": "USUG11600976"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/7MXVkk9YMctZqd1Srtv4MB"
+            },
+            "id": "7MXVkk9YMctZqd1Srtv4MB",
+            "is_local": false,
+            "is_playable": true,
+            "name": "Starboy",
+            "popularity": 95,
+            "preview_url": "https://p.scdn.co/mp3-preview/57c1238d183c40da3157c2892346f58445b1377c?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:7MXVkk9YMctZqd1Srtv4MB"
+          },
+          {
+            "album": {
+              "genre": "Hip-hop",
+              "album_type": "single",
+              "artists": [
+                {
+                  "external_urls": {
+                    "spotify": "https://open.spotify.com/artist/2FwDTncULUnmANIh7qKa5z"
+                  },
+                  "id": "2FwDTncULUnmANIh7qKa5z",
+                  "name": "FKJ",
+                  "type": "artist",
+                  "uri": "spotify:artist:2FwDTncULUnmANIh7qKa5z"
+                }
+              ],
+              "external_urls": {
+                "spotify": "https://open.spotify.com/album/4p8Kyy4XpCYLfNf3ZXGtCU"
+              },
+              "id": "4p8Kyy4XpCYLfNf3ZXGtCU",
+              "images": [
+                {
+                  "height": 640,
+                  "url": "https://i.scdn.co/image/ab67616d0000b2732689cd007f8a1b349fb46224",
+                  "width": 640
+                },
+                {
+                  "height": 300,
+                  "url": "https://i.scdn.co/image/ab67616d00001e022689cd007f8a1b349fb46224",
+                  "width": 300
+                },
+                {
+                  "height": 64,
+                  "url": "https://i.scdn.co/image/ab67616d000048512689cd007f8a1b349fb46224",
+                  "width": 64
+                }
+              ],
+              "is_playable": true,
+              "name": "Risk",
+              "release_date": "2019-11-05",
+              "release_date_precision": "day",
+              "total_tracks": 1,
+              "type": "album",
+              "uri": "spotify:album:4p8Kyy4XpCYLfNf3ZXGtCU"
+            },
+            "artists": [
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/2FwDTncULUnmANIh7qKa5z"
+                },
+                "id": "2FwDTncULUnmANIh7qKa5z",
+                "name": "FKJ",
+                "type": "artist",
+                "uri": "spotify:artist:2FwDTncULUnmANIh7qKa5z"
+              },
+              {
+                "external_urls": {
+                  "spotify": "https://open.spotify.com/artist/70gP6Ry4Uo0Yx6uzPIdaiJ"
+                },
+                "id": "70gP6Ry4Uo0Yx6uzPIdaiJ",
+                "name": "Bas",
+                "type": "artist",
+                "uri": "spotify:artist:70gP6Ry4Uo0Yx6uzPIdaiJ"
+              }
+            ],
+            "disc_number": 1,
+            "duration_ms": 238834,
+            "explicit": false,
+            "external_ids": {
+              "isrc": "GBKPL1970169"
+            },
+            "external_urls": {
+              "spotify": "https://open.spotify.com/track/2QDFsehUg5Fui2LOVpCw3Q"
+            },
+            "id": "2QDFsehUg5Fui2LOVpCw3Q",
+            "is_local": false,
+            "is_playable": true,
+            "linked_from": {
+              "external_urls": {
+                "spotify": "https://open.spotify.com/track/70XZHFxrmZgQQ5Uw7v8tPO"
+              },
+              "id": "70XZHFxrmZgQQ5Uw7v8tPO",
+              "type": "track",
+              "uri": "spotify:track:70XZHFxrmZgQQ5Uw7v8tPO"
+            },
+            "name": "Risk",
+            "popularity": 57,
+            "preview_url": "https://p.scdn.co/mp3-preview/c8f3fe0106d1bf596af0133db1babc3936c2a308?cid=d8a5ed958d274c2e8ee717e6a4b0971d",
+            "track_number": 1,
+            "type": "track",
+            "uri": "spotify:track:2QDFsehUg5Fui2LOVpCw3Q"
+          }
+        ]
+      }
+    ]
+  }
+  

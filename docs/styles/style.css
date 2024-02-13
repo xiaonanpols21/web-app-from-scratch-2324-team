@@ -1,0 +1,400 @@
+:root {
+  --color-border: #ddd;
+  --color-article: lightgray;
+  --color-headers: black;
+  --color-text: black;
+  --color-image: white;
+  --color-button: lightgray;
+  --color-listitem: white;
+  --color-loading: blue;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: ubuntu;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.songs {
+  border: 1px solid gray;
+  padding: 16px;
+  position: relative;
+}
+
+.songs button {
+  color: black;
+  background-color: gray;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  margin: 16px 16px 0 0;
+  height: 1em;
+  border: none;
+}
+
+.songs button:nth-of-type(2) {
+  position: absolute;
+  right: 0;
+}
+
+.songs button p::after {
+  content: "▼";
+  margin: 0 0 0 6px;
+}
+
+.songs h2 {
+  display: flex;
+  flex-direction: column-reverse;
+  z-index: 1;
+}
+
+.songs article {
+  position: relative;
+  color: white;
+  padding: 16px;
+  margin: 16px 0;
+  display: grid;
+  grid-template: 1fr 1fr 1fr/2fr 1fr;
+  max-height: 150px;
+}
+
+.songs article > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+  filter: blur(5px);   /* Zie prompts" https://chemical-bunny-323.notion.site/Chat-GPT-Documentatie-d93ea570990b4754bec559e9bfcc2217#0c8d223227624a75b798e98aa53affb8 */
+}
+
+.songs article h3 {
+  color: black;
+  display: block;
+  background-color: white;
+  width: max-content;
+  height: max-content;
+  padding: 4px 8px;
+  margin: 0 0 0 -16px;
+  z-index: 1;
+}
+
+.songs ul {
+  list-style: none;
+  z-index: 1;
+}
+
+.songs article > div:first-of-type {
+  grid-area: 1/2/4/3;
+  justify-self: end;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  z-index: 1;
+}
+.songs article > div:first-of-type > img:first-of-type {
+  border-radius: 100%;
+  justify-self: center;
+  align-self: center;
+  width: 100%;
+  aspect-ratio: 1/1;
+  transition: linear 1s;
+}
+.songs article > div:first-of-type > img:first-of-type:hover {
+  transform: rotate(360deg);
+}
+
+.songs article > div:first-of-type > div {
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.songs article > div:first-of-type > div > div {
+  height: 20%;
+  width: 20%;
+  background-color: grey;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.songs article > div:first-of-type img:last-of-type {
+  height: 25%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.songs article > div:last-of-type {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+}
+
+/* BODY */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+main {
+    display: none;
+    margin: auto;
+    justify-content: center;
+}
+
+.visually-hidden {
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+}
+
+
+/* LOADING */
+
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid var(--color-loading);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* HEADER */
+header nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 2px solid var(--color-border);
+    position: relative;
+}
+
+header nav img {
+    width: 150px;
+    height: 60px;
+}
+
+main a {
+  display: block;
+  width: fit-content;
+    text-decoration: none;
+    font-size: 10px;
+    color: var(--color-text);
+    background-color: var(--color-button);
+    padding: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: 2px solid var(--color-border);
+    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+
+/* PERSONAL INFO */
+.personalInfo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-gap: 20px;
+    position: relative;
+    margin-bottom: 50px;
+    padding: 16px;
+}
+
+.personalInfo article {
+    height: 150px;
+    box-sizing: border-box;
+    border: 1px solid var(--color-border);
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    position: relative;
+    top: 30px;
+    background-color: var(--color-article);
+}
+
+.personalInfo article h3 {
+    font-size: 25px;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: start;
+    position: relative;
+    left: 20px;
+    top: 20px;
+    margin: 0 0px 10px 0px;
+}
+
+.personalInfo article ul {
+    max-width: 160px;
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    left: 20px;
+    top: -20px;
+}
+
+.personalInfo article li {
+    font-size: 15px;
+    list-style: none;
+    margin: 0;
+    max-width: max-content;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-listitem);
+    padding: 3px;
+}
+
+.personalInfo article img {
+    grid-column: 2;
+    grid-row: span 2;
+    position: relative;
+    right: 10px;
+    top: 20px;
+    width: 110px;
+    height: 110px;
+    margin-left: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 1400px) {
+
+  .songs {
+    width: unset;
+  }
+
+  .songs h2 {
+    font-size: 18px;
+  }
+
+  .songs ul {
+    font-size: 12px;
+  }
+
+  .songs h3 {
+    font-size: 12px;
+    margin-top: 12px !important;
+  }
+
+  .songs article {
+    height: 100px;
+  }
+}
+
+
+/* desktop */
+@media (min-width: 1400px) {
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    padding: 50px;
+  }
+
+    main a{
+        display: none;
+    }
+
+    .personalInfo {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 0px;
+        padding: 0px;
+        height: fit-content;
+    }
+
+    .personalInfo article {
+        height: 320px;
+        position: relative;
+        margin: 0;
+        top: 0px;
+    }
+
+    .personalInfo article h3 {
+        position: relative;
+        top: 200px;
+
+    }
+
+    .personalInfo article ul {
+        position: relative;
+        top: -20px;
+        align-self: flex-end;
+        display: flex;
+        flex-wrap: wrap;
+        width: 160px;
+
+    }
+
+    .personalInfo article img {
+        position: relative;
+        top: 30px;
+        right: 30px;
+        height: 150px;
+        width: 150px;
+    }
+
+    
+
+
+}
+
