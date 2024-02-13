@@ -25,11 +25,11 @@ We hebben op een blad opgeschreven welke data we nodig kunnen hebben.
 ## Schets
 We begonnen met het maken van een schets van onze eerste idee. Het idee is om te beginnen met cards van ons zelf als intro en daarna cards van nummers die vanuit de dataset komen. Die cards kan je filteren en sorteren. 
 
-![Schets](./read-me-img/schets.png)
+![Schets](./docs/read-me-img/schets.png)
 
 Van de schetsen is er een wireframe gemaakt van de mobiele versie en home versie.
 
-![Schets](./read-me-img/wireframes.jpg)
+![Schets](./docs/read-me-img/wireframes.jpg)
 
 ## HTML CSS
 Hidde en Karenza begonnen met het maken van de HTML en CSS. Hidde doet de muziek sectie en Karenza de Team sectie.
