@@ -36,26 +36,26 @@ Hidde en Karenza begonnen met het maken van de HTML en CSS. Hidde doet de muziek
 
 ### Versie 1
 **Members**
-![Members](https://github.com/Hiddevdp/DuckAngels/blob/styling-albums/read-me-img/v-1-members.png)
+![Members](./docs/read-me-img/v-1-memebers.png)
 
 **Muziek**
-![Songs](https://github.com/Hiddevdp/DuckAngels/blob/styling-albums/read-me-img/v-1-songs.png)
+![Songs](./docs/read-me-img/v-1-songs.png)
 
 Deze aanpassingen zijn gedaan op aparte branches. We gingen eerst de branche van team mergen met main. Daarna die van songs. Er waren conflicts met main maar die konden we makkelijk aanpassen. Wanneer de 2 branches waren gemerged was er een conflict met de styling. Articles waren los gezet zoals: article {} maar het moest zijn: .personeelInfo article {}. Dat was snel te zien waardoor het mergen en aanpassen niet lang duurde.
 
 ### Versie 2
 Met wat styling aanpassingen en gefetchte data ziet de site er tot nu toe zo er uit:
 
-![Versie 2](https://github.com/Hiddevdp/DuckAngels/blob/styling-albums/read-me-img/v-2.png)
+![Versie 2](./docs/read-me-img/v-2.png)
 
 ## JSON
 
 De dataset ziet er als volgt uit waarbij de teamleden in een array zitten met al de info van die persoon. 
 
-![Data 1](https://github.com/Hiddevdp/DuckAngels/blob/styling-albums/read-me-img/data-1.png)
+![Data 1](./docs/read-me-img/data-1.png)
 
 Bij de tracks wordt de data van de Spotify Rapid API gebruikt. Hiervoor wordt elk liedje opgehaald met Get Tracks. Elk teamlid kiest 5 liedjes uit voor de dataset. Dan op Rapid API moet je de ID van het nummer via Spotify gebruiken om de nummers te krijgen. Dan kopiëren we de data die we krijgen van dat ene nummer en maken we handmatig een array van de 5 nummers bij elk teamlid.  
 
-![Data 2](https://github.com/Hiddevdp/DuckAngels/blob/styling-albums/read-me-img/data-2.png)
+![Data 2](./docs/read-me-img/data-2.png)
 
-![Data 2](https://github.com/Hiddevdp/DuckAngels/blob/styling-albums/read-me-img/rapid-api-spotify.png)
+![Data 2](./docs/read-me-img/rapid-api-spotify.png)
