@@ -1,12 +1,15 @@
 :root {
-  --color-border: #ddd;
-  --color-article: lightgray;
+  --color-border: #D9D5D4;
+  --color-article: #F1DF79;
   --color-headers: black;
   --color-text: black;
   --color-image: white;
-  --color-button: lightgray;
-  --color-listitem: white;
+  --color-button: #B8E86E;
+  --color-listitem: #745246;
   --color-loading: blue;
+  --color-listitemteks: #D9D5D4;
+  --color-body: #EDF9DA;
+  --color-bg: white;
 }
 
 * {
@@ -16,6 +19,11 @@
 
 html {
   font-family: ubuntu;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-body);
 }
 
 main {
@@ -25,14 +33,14 @@ main {
 }
 
 .songs {
-  border: 1px solid gray;
+  /* border: 1px solid var(--color-border); */
   padding: 16px;
   position: relative;
 }
 
 .songs button {
-  color: black;
-  background-color: gray;
+  color: var(--color-text);
+  background-color: var(--color-button);
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -218,6 +226,7 @@ header nav {
     justify-content: center;
     padding: 10px;
     border-bottom: 2px solid var(--color-border);
+    background-color: var(--color-bg);
     position: relative;
 }
 
@@ -301,6 +310,7 @@ main a {
     border: 1px solid var(--color-border);
     background-color: var(--color-listitem);
     padding: 3px;
+    color: var(--color-listitemteks);
 }
 
 .personalInfo article img {
