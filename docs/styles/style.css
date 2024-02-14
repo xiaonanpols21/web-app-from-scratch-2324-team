@@ -38,38 +38,16 @@ main {
   position: relative;
 }
 
-.songs button {
-  color: var(--color-text);
-  background-color: var(--color-button);
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-  margin: 16px 16px 0 0;
-  height: 1em;
-  border: none;
-}
-
 .filtersortcontainer {
   display: flex;
   justify-content: space-between;
 }
 
 .filtersort {
-  background-color: gray;
+  background-color: var(--color-button);
   padding: 0.5em;
   width: max-content;
   margin-top: 16px;
-}
-
-.songs button:nth-of-type(2) {
-  position: absolute;
-  right: 0;
-}
-
-.songs button p::after {
-  content: "▼";
-  margin: 0 0 0 6px;
 }
 
 .songs h2 {
