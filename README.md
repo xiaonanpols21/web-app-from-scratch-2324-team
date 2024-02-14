@@ -34,7 +34,7 @@ Hidde en Karenza begonnen met het maken van de HTML en CSS. Hidde doet de muziek
 
 ### Versie 1
 **Members**
-![Members](./docs/read-me-img/v-1-memebers.png)
+![Members](./docs/read-me-img/v-1-members.png)
 
 **Muziek**
 ![Songs](./docs/read-me-img/v-1-songs.png)
