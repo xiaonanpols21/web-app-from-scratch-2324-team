@@ -364,19 +364,19 @@ main a {
 }
 
 
-.personalInfo article:nth-of-type(1) img:hover {
+.personalInfo article:nth-of-type(1):hover img {
   animation: pulse 0.5s ease-in-out infinite;
 }
 
-.personalInfo article:nth-of-type(2) img:hover{
+.personalInfo article:nth-of-type(2):hover img{
   transform: scale(1.1) rotate(5deg);
 }
 
-.personalInfo article:nth-of-type(3) img:hover{
+.personalInfo article:nth-of-type(3):hover img{
   animation: rotate 2s linear infinite;
 }
 
-.personalInfo article:nth-of-type(4) img:hover{
+.personalInfo article:nth-of-type(4):hover img{
   animation: shake 0.5s ease-in-out;
 }
 
