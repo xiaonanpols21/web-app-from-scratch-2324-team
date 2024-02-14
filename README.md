@@ -54,7 +54,7 @@ Met wat styling aanpassingen en gefetchte data ziet de site er tot nu toe zo er 
 ![Versie 2](./docs/read-me-img/v-2.png)
 
 ### Versie 3
-Het is mogelijk om de nummers te sorteren en te filteren. 
+Het is mogelijk om de nummers te sorteren en te filteren. Ook is in deze versie gemaakt dat de bachground de img heeft van de cover van het liedje. 
 
 **Sorteren**
 - A-z
