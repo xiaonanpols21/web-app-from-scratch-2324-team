@@ -72,11 +72,13 @@ function muziekData(siteJson) {
             const img = item.album.images[1].url;
             const genre = item.album.genre;
             const userImg = user.image; 
-            const userName = user.name; 
+            const userName = user.name;
+            const previewUrl = item.preview_url
 
             const html = 
             ` 
-            <article>
+            <article id="song">
+                <audio id="audioPreview" src=${previewUrl} preload="auto"></audio>
                 <h2>${name}</h2>
                 <ul>
                     <li>Artist: ${artist}</li>
@@ -98,4 +100,10 @@ function muziekData(siteJson) {
         });
     });
 }
+
+document.getElementById('song').addEventListener('click', async function() {
+    console.log('clicked');
+    await muziekData();
+    document.getElementById('audioPreview').play();
+});
 
