@@ -50,6 +50,18 @@ main {
   border: none;
 }
 
+.filtersortcontainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filtersort {
+  background-color: gray;
+  padding: 0.5em;
+  width: max-content;
+  margin-top: 16px;
+}
+
 .songs button:nth-of-type(2) {
   position: absolute;
   right: 0;
@@ -82,7 +94,9 @@ main {
   height: 100%;
   z-index: -1;
   object-fit: cover;
-  filter: blur(5px);   /* Zie prompts" https://chemical-bunny-323.notion.site/Chat-GPT-Documentatie-d93ea570990b4754bec559e9bfcc2217#0c8d223227624a75b798e98aa53affb8 */
+  filter: blur(
+    5px
+  ); /* Zie prompts" https://chemical-bunny-323.notion.site/Chat-GPT-Documentatie-d93ea570990b4754bec559e9bfcc2217#0c8d223227624a75b798e98aa53affb8 */
 }
 
 .songs article h3 {
@@ -162,63 +176,61 @@ main {
 }
 
 /* BODY */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
 body {
-    font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 main {
-    display: none;
-    margin: auto;
-    justify-content: center;
+  display: none;
+  margin: auto;
+  justify-content: center;
 }
 
 .visually-hidden {
-    width: 1px;
-    height: 1px;
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
 }
-
 
 /* LOADING */
 
 .loading-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
 }
 
 .loader {
-    border: 8px solid #f3f3f3;
-    border-top: 8px solid var(--color-loading);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    animation: spin 1s linear infinite;
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid var(--color-loading);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
 
 /* HEADER */
 header nav {
@@ -231,75 +243,74 @@ header nav {
 }
 
 header nav img {
-    width: 150px;
-    height: 60px;
+  width: 150px;
+  height: 60px;
 }
 
 main a {
   display: block;
   width: fit-content;
-    text-decoration: none;
-    font-size: 10px;
-    color: var(--color-text);
-    background-color: var(--color-button);
-    padding: .5em;
-    padding-left: 1em;
-    padding-right: 1em;
-    border: 2px solid var(--color-border);
-    box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-    top: 10px;
-    left: 20px;
+  text-decoration: none;
+  font-size: 10px;
+  color: var(--color-text);
+  background-color: var(--color-button);
+  padding: 0.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border: 2px solid var(--color-border);
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 10px;
+  left: 20px;
 }
-
 
 /* PERSONAL INFO */
 .personalInfo {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    grid-gap: 20px;
-    position: relative;
-    margin-bottom: 50px;
-    padding: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 20px;
+  position: relative;
+  margin-bottom: 50px;
+  padding: 16px;
 }
 
 .personalInfo article {
-    height: 150px;
-    box-sizing: border-box;
-    border: 1px solid var(--color-border);
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
-    gap: 20px;
-    position: relative;
-    top: 30px;
-    background-color: var(--color-article);
+  height: 150px;
+  box-sizing: border-box;
+  border: 1px solid var(--color-border);
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  position: relative;
+  top: 30px;
+  background-color: var(--color-article);
 }
 
 .personalInfo article h3 {
-    font-size: 25px;
-    grid-column: 1;
-    grid-row: 1;
-    align-self: start;
-    position: relative;
-    left: 20px;
-    top: 20px;
-    margin: 0 0px 10px 0px;
+  font-size: 25px;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  position: relative;
+  left: 20px;
+  top: 20px;
+  margin: 0 0px 10px 0px;
 }
 
 .personalInfo article ul {
-    max-width: 160px;
-    grid-column: 1;
-    grid-row: 2;
-    display: flex;
-    gap: 5px;
-    flex-wrap: wrap;
-    align-self: flex-start;
-    padding: 0;
-    margin: 0;
-    position: relative;
-    left: 20px;
-    top: -20px;
+  max-width: 160px;
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  left: 20px;
+  top: -20px;
 }
 
 .personalInfo article li {
@@ -314,19 +325,18 @@ main a {
 }
 
 .personalInfo article img {
-    grid-column: 2;
-    grid-row: span 2;
-    position: relative;
-    right: 10px;
-    top: 20px;
-    width: 110px;
-    height: 110px;
-    margin-left: auto;
-    object-fit: cover;
+  grid-column: 2;
+  grid-row: span 2;
+  position: relative;
+  right: 10px;
+  top: 20px;
+  width: 110px;
+  height: 110px;
+  margin-left: auto;
+  object-fit: cover;
 }
 
 @media (max-width: 1400px) {
-
   .songs {
     width: unset;
   }
@@ -349,10 +359,8 @@ main a {
   }
 }
 
-
 /* desktop */
 @media (min-width: 1400px) {
-
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -360,51 +368,44 @@ main a {
     padding: 50px;
   }
 
-    main a{
-        display: none;
-    }
+  main a {
+    display: none;
+  }
 
-    .personalInfo {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        margin: 0px;
-        padding: 0px;
-        height: fit-content;
-    }
+  .personalInfo {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 0px;
+    padding: 0px;
+    height: fit-content;
+  }
 
-    .personalInfo article {
-        height: 320px;
-        position: relative;
-        margin: 0;
-        top: 0px;
-    }
+  .personalInfo article {
+    height: 320px;
+    position: relative;
+    margin: 0;
+    top: 0px;
+  }
 
-    .personalInfo article h3 {
-        position: relative;
-        top: 200px;
+  .personalInfo article h3 {
+    position: relative;
+    top: 200px;
+  }
 
-    }
+  .personalInfo article ul {
+    position: relative;
+    top: -20px;
+    align-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    width: 160px;
+  }
 
-    .personalInfo article ul {
-        position: relative;
-        top: -20px;
-        align-self: flex-end;
-        display: flex;
-        flex-wrap: wrap;
-        width: 160px;
-
-    }
-
-    .personalInfo article img {
-        position: relative;
-        top: 30px;
-        right: 30px;
-        height: 150px;
-        width: 150px;
-    }
-
-    
-
-
+  .personalInfo article img {
+    position: relative;
+    top: 30px;
+    right: 30px;
+    height: 150px;
+    width: 150px;
+  }
 }
-
