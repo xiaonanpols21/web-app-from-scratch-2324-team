@@ -22,8 +22,10 @@ async function siteInfo() { //Functie die de JSON file gaat ophalen en waardes g
     //Voer de functie uit als de data is ingeladen
     personalInfoData(siteJson); 
     muziekData(siteJson);
+
+
 }
-siteInfo() //Voert de functie uit 
+togglePlayPauze()
 
 // Bron: https://www.w3schools.com/jsref/met_node_insertadjacenthtml.asp
 function personalInfoData(siteJson) { //Maak een functie met als parameter de data.
@@ -77,7 +79,7 @@ function muziekData(siteJson) {
 
             const html = 
             ` 
-            <article id="song">
+            <article class="song">
                 <audio id="audioPreview" src=${previewUrl} preload="auto"></audio>
                 <h2>${name}</h2>
                 <ul>
@@ -101,9 +103,23 @@ function muziekData(siteJson) {
     });
 }
 
-document.getElementById('song').addEventListener('click', async function() {
-    console.log('clicked');
-    await muziekData();
-    document.getElementById('audioPreview').play();
-});
-
+async function togglePlayPauze(){ //Functie om de muziek af te spelen, te pauzeren en de class playing toe te voegen of te verwijderen.
+    await siteInfo(); //Wacht tot de siteInfo functie is uitgevoerd zodat alle html is ingeladen
+    const allSongs = document.querySelectorAll('.song'); //selecteerd alle items met de class song
+    allSongs.forEach(song => { //Loopt door alle items heen
+        song.addEventListener("click", function(){ //Voegt een eventlistener toe aan elk item
+            const audio = song.querySelector('audio'); //Selecteerd de audio van het item
+            if(audio.paused){  //Als de audio gepauzeerd is
+                allSongs.forEach(s => { //Loopt nog een keer door alle songs heen
+                    s.classList.remove('playing'); //Verwijderd de class playing van alle songs zodat alleen de song die afgespeeld wordt de class playing heeft
+                    s.querySelector('audio').pause(); //Pauzeerd alle audio
+                });
+                audio.play(); //Speelt de audio waar op geklikt is af
+                song.classList.add('playing'); //Voegt de class playing toe aan de song waar op geklikt is
+            }else{
+                audio.pause(); //Pauzeerd de audio waar op geklikt is
+                song.classList.remove('playing'); //Verwijderd de class playing van de song waar op geklikt is
+            }
+        })
+    });
+}
