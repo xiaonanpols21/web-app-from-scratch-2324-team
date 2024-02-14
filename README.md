@@ -57,3 +57,12 @@ Bij de tracks wordt de data van de Spotify Rapid API gebruikt. Hiervoor wordt el
 ![Data 2](./docs/read-me-img/data-2.png)
 
 ![Data 2](./docs/read-me-img/rapid-api-spotify.png)
+
+## UI stack
+
+We zijn natuurlijk allemaal bezig geweest met de ideal state, maar we moeten natuurlijk ook rekening houden met de gebruiker. 
+Als de data nog niet helemaal geladen is dan we een loading state.
+
+![Loading state](./docs/read-me-img/loading-state.png)
+
+
