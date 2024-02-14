@@ -87,7 +87,7 @@ function muziekData(siteJson, sortBy, filterBy) {
   const sortedTracks = sortTracks(allTracks, sortBy);
 
   const sortedFilteredTracks = filterTracks(sortedTracks, filterBy);
-  console.log("songs should be filtered by" + filterBy);
+  console.log("Songs sorted by " + sortBy + " and filtered by " + filterBy);
 
   songsSection.innerHTML = "";
   console.log(sortedFilteredTracks);
@@ -129,37 +129,56 @@ function muziekData(siteJson, sortBy, filterBy) {
 }
 
 function sortTracks(tracks, sortBy) {
+  //functie om de tracks te sorteren
   if (sortBy === "releasedate") {
-    console.log("sorted by release");
-    return tracks
-      .slice()
-      .sort((a, b) => a.album.release_date.localeCompare(b.album.release_date));
+    return tracks.sort((a, b) =>
+      a.album.release_date.localeCompare(b.album.release_date)
+    ); //maakt een nieuwe array aan gesorteerd op release
   } else if (sortBy === "streams") {
-    console.log("sorted by streams");
-    return tracks.slice().sort((a, b) => {
-      const popularityA = String(a.popularity);
+    //door de popularity te vergelijken kan je sorteren op streams
+    return tracks.sort((a, b) => {
+      const popularityA = String(a.popularity); //van beide waardes moet een string gemaakt worden
       const popularityB = String(b.popularity);
-      return popularityB.localeCompare(popularityA);
+      return popularityB.localeCompare(popularityA); //waardes omgedraaid zodat meest populair bovenaan staat
     });
   } else {
-    console.log("sorted by name");
-    return tracks.slice().sort((a, b) => a.name.localeCompare(b.name));
+    return tracks.sort((a, b) => a.name.localeCompare(b.name)); // anders op alfabet sorteren
   }
 }
 
 function filterTracks(sortedTracks, filterBy) {
-  if (filterBy === "K-pop") {
-    console.log(filterBy);
-    //filterBy is undefined
-    console.log("filtered by K-pop " + filterBy);
+  //functie om de tracks te filteren
+  if (filterBy === "hiphop") {
+    // if statements per genre
     const sortedFilteredTracks = sortedTracks.filter(
-      (track) => track.album.genre === "K-pop" //hier wil ik dan filterBy
+      (track) => track.album.genre === "Hip-hop" //de tracks worden gefilterd en gereturned
     );
-    console.log(sortedFilteredTracks);
+    return sortedFilteredTracks;
+  }
+  if (filterBy === "kpop") {
+    const sortedFilteredTracks = sortedTracks.filter(
+      (track) => track.album.genre === "K-pop"
+    );
+    return sortedFilteredTracks;
+  }
+  if (filterBy === "latin") {
+    const sortedFilteredTracks = sortedTracks.filter(
+      (track) => track.album.genre === "Latin"
+    );
+    return sortedFilteredTracks;
+  }
+  if (filterBy === "pop") {
+    const sortedFilteredTracks = sortedTracks.filter(
+      (track) => track.album.genre === "Pop"
+    );
+    return sortedFilteredTracks;
+  }
+  if (filterBy === "techno") {
+    const sortedFilteredTracks = sortedTracks.filter(
+      (track) => track.album.genre === "Techno"
+    );
     return sortedFilteredTracks;
   } else {
-    console.log("no filter set");
-    console.log(sortedTracks);
-    return sortedTracks;
+    return sortedTracks; //geen filter geselecteerd betekent alle nummers tonen
   }
 }
