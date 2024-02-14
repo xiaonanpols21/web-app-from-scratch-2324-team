@@ -1,12 +1,15 @@
 :root {
-  --color-border: #ddd;
-  --color-article: lightgray;
+  --color-border: #D9D5D4;
+  --color-article: #F1DF79;
   --color-headers: black;
   --color-text: black;
   --color-image: white;
-  --color-button: lightgray;
-  --color-listitem: white;
+  --color-button: #B8E86E;
+  --color-listitem: #745246;
   --color-loading: blue;
+  --color-listitemteks: #D9D5D4;
+  --color-body: #EDF9DA;
+  --color-bg: white;
 }
 
 * {
@@ -16,6 +19,11 @@
 
 html {
   font-family: ubuntu;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-body);
 }
 
 main {
@@ -25,31 +33,21 @@ main {
 }
 
 .songs {
-  border: 1px solid gray;
+  /* border: 1px solid var(--color-border); */
   padding: 16px;
   position: relative;
 }
 
-.songs button {
-  color: black;
-  background-color: gray;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 16px;
-  margin: 16px 16px 0 0;
-  height: 1em;
-  border: none;
+.filtersortcontainer {
+  display: flex;
+  justify-content: space-between;
 }
 
-.songs button:nth-of-type(2) {
-  position: absolute;
-  right: 0;
-}
-
-.songs button p::after {
-  content: "▼";
-  margin: 0 0 0 6px;
+.filtersort {
+  background-color: var(--color-button);
+  padding: 0.5em;
+  width: max-content;
+  margin-top: 16px;
 }
 
 .songs h2 {
@@ -74,8 +72,10 @@ main {
   height: 100%;
   z-index: -1;
   object-fit: cover;
+
   filter: blur(5px);
   /* Zie prompts" https://chemical-bunny-323.notion.site/Chat-GPT-Documentatie-d93ea570990b4754bec559e9bfcc2217#0c8d223227624a75b798e98aa53affb8 */
+
 }
 
 .songs article h3 {
@@ -157,7 +157,7 @@ main {
 }
 
 /* BODY */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
 
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -178,7 +178,6 @@ main {
   position: absolute;
   white-space: nowrap;
 }
-
 
 /* LOADING */
 
@@ -214,7 +213,6 @@ main {
   }
 }
 
-
 /* HEADER */
 header nav {
   display: flex;
@@ -245,7 +243,6 @@ main a {
   top: 10px;
   left: 20px;
 }
-
 
 /* PERSONAL INFO */
 .personalInfo {
@@ -304,6 +301,7 @@ main a {
   border: 1px solid var(--color-border);
   background-color: var(--color-listitem);
   padding: 3px;
+  color: var(--color-listitemteks);
 }
 
 .personalInfo article img {
@@ -317,7 +315,6 @@ main a {
   margin-left: auto;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
-
 }
 
 /* COOL HOVER EFFECTS */
@@ -384,15 +381,7 @@ main a {
 }
 
 
-
-
-
-
-
-
-
 @media (max-width: 1400px) {
-
   .songs {
     width: unset;
   }
@@ -415,10 +404,8 @@ main a {
   }
 }
 
-
 /* desktop */
 @media (min-width: 1400px) {
-
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -429,6 +416,7 @@ main a {
   main a {
     display: none;
   }
+
 
   .personalInfo {
     grid-template-columns: repeat(2, 1fr);
@@ -470,6 +458,14 @@ main a {
   }
 
 
-
+  .personalInfo article ul {
+    position: relative;
+    top: -20px;
+    align-self: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    width: 160px;
+  }
 
 }
+
