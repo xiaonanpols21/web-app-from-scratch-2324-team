@@ -32,6 +32,13 @@ Van de schetsen is er een wireframe gemaakt van de mobiele versie en home versie
 ## HTML CSS
 Hidde en Karenza begonnen met het maken van de HTML en CSS. Hidde doet de muziek sectie en Karenza de Team sectie.
 
+## UI stack
+
+We zijn natuurlijk allemaal bezig geweest met de ideal state, maar we moeten natuurlijk ook rekening houden met de gebruiker. 
+Als de data nog niet helemaal geladen is dan we een loading state.
+
+![Loading state](./docs/read-me-img/loading-state.png)
+
 ### Versie 1
 **Members**
 ![Members](./docs/read-me-img/v-1-members.png)
@@ -46,6 +53,23 @@ Met wat styling aanpassingen en gefetchte data ziet de site er tot nu toe zo er 
 
 ![Versie 2](./docs/read-me-img/v-2.png)
 
+### Versie 3
+Het is mogelijk om de nummers te sorteren en te filteren. 
+
+**Sorteren**
+- A-z
+- Year
+- Streams
+
+**Filteren**
+- Hp-hop
+- K-pop
+- Latin
+- Pop
+- Techno
+
+![Filter en sort](./docs/read-me-img/Filter.png)
+
 ## JSON
 
 De dataset ziet er als volgt uit waarbij de teamleden in een array zitten met al de info van die persoon. 
@@ -57,12 +81,4 @@ Bij de tracks wordt de data van de Spotify Rapid API gebruikt. Hiervoor wordt el
 ![Data 2](./docs/read-me-img/data-2.png)
 
 ![Data 2](./docs/read-me-img/rapid-api-spotify.png)
-
-## UI stack
-
-We zijn natuurlijk allemaal bezig geweest met de ideal state, maar we moeten natuurlijk ook rekening houden met de gebruiker. 
-Als de data nog niet helemaal geladen is dan we een loading state.
-
-![Loading state](./docs/read-me-img/loading-state.png)
-
 
