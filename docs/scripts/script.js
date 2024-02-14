@@ -76,7 +76,6 @@ function personalInfoData(siteJson) {
 
 // Bron: Chatgpt
 // Zie prompts: https://chemical-bunny-323.notion.site/Chat-GPT-Documentatie-d93ea570990b4754bec559e9bfcc2217#0c8f89c5cf764153b708b3542425c72f
-
 function muziekData(siteJson, sortBy, filterBy) {
   const songsSection = document.querySelector(".songList"); // Kies een element waar de songs in moeten en zorg dat die semantisch beschrijft wat het moet zijn
 
@@ -128,6 +127,7 @@ function muziekData(siteJson, sortBy, filterBy) {
   });
 }
 
+// Zie prompts: https://detailed-tuberose-64a.notion.site/Duck-Angles-09c1e226f6f14c0d8082e7d68835bbd0#7d2a3426e1524e1a861306dabbe60135
 function sortTracks(tracks, sortBy) {
   //functie om de tracks te sorteren
   if (sortBy === "releasedate") {
@@ -136,6 +136,7 @@ function sortTracks(tracks, sortBy) {
     ); //maakt een nieuwe array aan gesorteerd op release
   } else if (sortBy === "streams") {
     //door de popularity te vergelijken kan je sorteren op streams
+    // ZIe prompts: https://detailed-tuberose-64a.notion.site/Duck-Angles-09c1e226f6f14c0d8082e7d68835bbd0#23f679b2a66443ac93588d43f7ff2a9b
     return tracks.sort((a, b) => {
       const popularityA = String(a.popularity); //van beide waardes moet een string gemaakt worden
       const popularityB = String(b.popularity);
@@ -146,6 +147,7 @@ function sortTracks(tracks, sortBy) {
   }
 }
 
+// ZIe prompts: https://detailed-tuberose-64a.notion.site/Duck-Angles-09c1e226f6f14c0d8082e7d68835bbd0#387bbae3175a440bbcb5fb511e724ac9
 function filterTracks(sortedTracks, filterBy) {
   //functie om de tracks te filteren
   if (filterBy === "hiphop") {
