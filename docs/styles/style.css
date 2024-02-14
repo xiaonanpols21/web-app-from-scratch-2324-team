@@ -117,7 +117,10 @@ main {
   transform: rotate(360deg);
 }
 
-.songs article>div:first-of-type>div {
+
+
+.songs article > div:first-of-type > div {
+
   width: 30%;
   height: 30%;
   border-radius: 50%;
@@ -155,6 +158,30 @@ main {
   background-color: black;
   opacity: 0.5;
 }
+
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.song{
+  cursor: pointer;
+}
+
+.song div:first-of-type > img:first-of-type{
+  animation: rotate 2s linear infinite;
+  animation-play-state: paused;
+}
+
+.playing div:first-of-type > img:first-of-type {
+  animation-play-state: running;
+}
+
 
 /* BODY */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");

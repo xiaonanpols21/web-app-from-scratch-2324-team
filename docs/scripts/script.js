@@ -22,6 +22,15 @@ async function siteInfo() {
   // document.getElementById('namePlaceholder').innerText = siteJson.name; //Zoekt het element met de Id namePlaceholder op en past de waarde aan gebaseerd op wat er in de variabele siteJson staat met de key (idk of het ook zo heet in JSON) name
   // console.log(siteJson)
 
+
+    //Voer de functie uit als de data is ingeladen
+    personalInfoData(siteJson); 
+    muziekData(siteJson);
+
+
+}
+togglePlayPauze()
+
   //Voer de functie uit als de data is ingeladen
 
   // Plaats dit op een plek zoals een functie die de data kan ontvangen of al heeft bijv listenSort()
@@ -39,6 +48,7 @@ async function siteInfo() {
   muziekData(siteJson);
 }
 siteInfo(); //Voert de functie uit
+
 
 // Bron: https://www.w3schools.com/jsref/met_node_insertadjacenthtml.asp
 function personalInfoData(siteJson) {
@@ -76,6 +86,7 @@ function personalInfoData(siteJson) {
 
 // Bron: Chatgpt
 // Zie prompts: https://chemical-bunny-323.notion.site/Chat-GPT-Documentatie-d93ea570990b4754bec559e9bfcc2217#0c8f89c5cf764153b708b3542425c72f
+
 function muziekData(siteJson, sortBy, filterBy) {
   const songsSection = document.querySelector(".songList"); // Kies een element waar de songs in moeten en zorg dat die semantisch beschrijft wat het moet zijn
 
@@ -106,6 +117,7 @@ function muziekData(siteJson, sortBy, filterBy) {
 
     const html = ` 
             <article>
+
                 <h2>${name}</h2>
                 <ul>
                     <li>Artist: ${artist}</li>
@@ -147,6 +159,27 @@ function sortTracks(tracks, sortBy) {
   }
 }
 
+
+async function togglePlayPauze(){ //Functie om de muziek af te spelen, te pauzeren en de class playing toe te voegen of te verwijderen.
+    await siteInfo(); //Wacht tot de siteInfo functie is uitgevoerd zodat alle html is ingeladen
+    const allSongs = document.querySelectorAll('.song'); //selecteerd alle items met de class song
+    allSongs.forEach(song => { //Loopt door alle items heen
+        song.addEventListener("click", function(){ //Voegt een eventlistener toe aan elk item
+            const audio = song.querySelector('audio'); //Selecteerd de audio van het item
+            if(audio.paused){  //Als de audio gepauzeerd is
+                allSongs.forEach(s => { //Loopt nog een keer door alle songs heen
+                    s.classList.remove('playing'); //Verwijderd de class playing van alle songs zodat alleen de song die afgespeeld wordt de class playing heeft
+                    s.querySelector('audio').pause(); //Pauzeerd alle audio
+                });
+                audio.play(); //Speelt de audio waar op geklikt is af
+                song.classList.add('playing'); //Voegt de class playing toe aan de song waar op geklikt is
+            }else{
+                audio.pause(); //Pauzeerd de audio waar op geklikt is
+                song.classList.remove('playing'); //Verwijderd de class playing van de song waar op geklikt is
+            }
+        })
+    });
+
 // ZIe prompts: https://detailed-tuberose-64a.notion.site/Duck-Angles-09c1e226f6f14c0d8082e7d68835bbd0#387bbae3175a440bbcb5fb511e724ac9
 function filterTracks(sortedTracks, filterBy) {
   //functie om de tracks te filteren
@@ -183,4 +216,5 @@ function filterTracks(sortedTracks, filterBy) {
   } else {
     return sortedTracks; //geen filter geselecteerd betekent alle nummers tonen
   }
+
 }
