@@ -29,17 +29,21 @@ async function siteInfo() {
     const sortBy = this.value;
     const filterBy = document.getElementById("filter").value;
     muziekData(siteJson, sortBy, filterBy);
+    togglePlayPauze(); // Update de afspeel/pauze functionaliteit na sortering
   });
   document.getElementById("filter").addEventListener("change", function () {
     const filterBy = this.value;
     const sortBy = document.getElementById("sort").value;
     muziekData(siteJson, sortBy, filterBy);
+    togglePlayPauze(); // Update de afspeel/pauze functionaliteit na filtering
   });
   
   personalInfoData(siteJson);
   muziekData(siteJson);
+  togglePlayPauze();
 }
-togglePlayPauze()
+
+siteInfo();
 
 // Bron: https://www.w3schools.com/jsref/met_node_insertadjacenthtml.asp
 function personalInfoData(siteJson) {
@@ -75,6 +79,7 @@ function personalInfoData(siteJson) {
   // insertAdjacentHTML is een methode om html tekst toe te voegen. beforeend is een parameter die zegt waar de html gezet moet worden.
 }
 
+
 // Bron: Chatgpt
 // Zie prompts: https://chemical-bunny-323.notion.site/Chat-GPT-Documentatie-d93ea570990b4754bec559e9bfcc2217#0c8f89c5cf764153b708b3542425c72f
 function muziekData(siteJson, sortBy, filterBy) {
@@ -88,6 +93,7 @@ function muziekData(siteJson, sortBy, filterBy) {
 
   songsSection.innerHTML = "";
   console.log(sortedFilteredTracks);
+
   sortedFilteredTracks.forEach((item) => {
     //forEach loop om van elk nummer de benodigde info op te halen
     const name = item.name;
@@ -182,8 +188,7 @@ function filterTracks(sortedTracks, filterBy) {
   }
 }
 
-async function togglePlayPauze(){ //Functie om de muziek af te spelen, te pauzeren en de class playing toe te voegen of te verwijderen.
-  await siteInfo(); //Wacht tot de siteInfo functie is uitgevoerd zodat alle html is ingeladen
+function togglePlayPauze(){ //Functie om de muziek af te spelen, te pauzeren en de class playing toe te voegen of te verwijderen.
   const allSongs = document.querySelectorAll('.song'); //selecteerd alle items met de class song
   allSongs.forEach(song => { //Loopt door alle items heen
       song.addEventListener("click", function(){ //Voegt een eventlistener toe aan elk item
@@ -202,3 +207,5 @@ async function togglePlayPauze(){ //Functie om de muziek af te spelen, te pauzer
       })
   });
 }
+
+// Zie alle Chat gpt Prompts: https://detailed-tuberose-64a.notion.site/Duck-Angles-09c1e226f6f14c0d8082e7d68835bbd0#dc134fe003b4473c97bd4c477e2bd8d4
