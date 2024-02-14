@@ -3,7 +3,7 @@
     "members": [
       {
         "name": "Max",
-        "personalPage": "https://github.com/maxstrikkers/web-app-from-scratch-2324",
+        "personalPage": "https://maxstrikkers.github.io/web-app-from-scratch-2324/info.json",
         "geboortedatum": "08-04-2000",
         "favoriet_genre": "Techno",
         "image": "./public/img/max.jpeg",
@@ -401,7 +401,7 @@
       },
       {
         "name": "Xiao Nan",
-        "personalPage": "https://github.com/xiaonanpols21/WAFS-2.0",
+        "personalPage": "https://xiao-foods.onrender.com/info.json",
         "geboortedatum": "03-06-2001",
         "favoriet_genre": "K-Pop",
         "image": "./public/img/xiaonan.JPG",
@@ -816,7 +816,7 @@
       },
       {
         "name": "Karenza",
-        "personalPage": "https://karenzadekoop1.github.io/web-app-from-scratch-2324/",
+        "personalPage": "https://karenzadekoop1.github.io/web-app-from-scratch-2324/info.json",
         "geboortedatum": "06-01-2003",
         "favoriet_genre": "Latin",
         "image": "./public/img/karenza.jpg",
@@ -1214,7 +1214,7 @@
       },
       {
         "name": "Hidde",
-        "personalPage": "https://github.com/Hiddevdp/web-app-from-scratch-2324",
+        "personalPage": "https://hiddevdp.github.io/web-app-from-scratch-2324/info.json",
         "geboortedatum": "25-03-1999",
         "favoriet_genre": "Hip-Hop",
         "image": "./public/img/hidde.jpg",

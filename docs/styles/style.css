@@ -247,6 +247,7 @@ header nav {
   padding: 10px;
   border-bottom: 2px solid var(--color-border);
   position: relative;
+  background-color: var(--color-bg);
 }
 
 header nav img {

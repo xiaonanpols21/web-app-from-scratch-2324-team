@@ -20,7 +20,7 @@ async function siteInfo() {
   const response = await fetch("team.json"); //Maakt de variabele response aan door het JSON bestand te fetchen (en te wachten tot het binnen is doormiddel van await)
   const siteJson = await response.json(); //Zet het JSON bestand wat binnen komt als text om naar een JSON
   // document.getElementById('namePlaceholder').innerText = siteJson.name; //Zoekt het element met de Id namePlaceholder op en past de waarde aan gebaseerd op wat er in de variabele siteJson staat met de key (idk of het ook zo heet in JSON) name
-  // console.log(siteJson)
+  //console.log(siteJson)
 
   //Voer de functie uit als de data is ingeladen
 
@@ -50,11 +50,25 @@ function personalInfoData(siteJson) {
   //Maak een functie met als parameter de data.
   const personalInfoSection = document.querySelector(".personalInfo"); // Select de dom van waar de content moet omen
 
-  Object.values(siteJson.members).forEach((item) => {
+  Object.values(siteJson.members).forEach( async (item) => {
     // Doe een foreach op de mensen array
+    
+    // De namen van de members kunnen worden opgehaald. Maar niet die van Xiao Nan vanwege deployen op render.
+    // Nu wordt er gedaan: als info niet wordt defined door niet kunnen ophalen van Xiao haar /info.json, maak dan voor nu een neppe data aan.
+    let info;
+    try {
+      const res = await fetch(item.personalPage)
+      info = await res.json()
+      
+    } catch (error) {
+      console.error(error);
+      info = {
+        "firstName": "Xiao Nan",
+      }
+    }
 
     // Maak variables aan met de juiste data die opgehaald moet worden
-    const name = item.name;
+    const name = info.firstName;
     const img = item.image;
     const date = item.geboortedatum;
     const city = item.woonplaats;
@@ -92,7 +106,7 @@ function muziekData(siteJson, sortBy, filterBy) {
   //console.log("Songs sorted by " + sortBy + " and filtered by " + filterBy);
 
   songsSection.innerHTML = "";
-  console.log(sortedFilteredTracks);
+  //console.log(sortedFilteredTracks);
 
   sortedFilteredTracks.forEach((item) => {
     //forEach loop om van elk nummer de benodigde info op te halen

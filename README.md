@@ -39,7 +39,19 @@ Als de data nog niet helemaal geladen is dan we een loading state.
 
 ![Loading state](./docs/read-me-img/loading-state.png)
 
-### Versie 1
+## JSON
+
+De dataset ziet er als volgt uit waarbij de teamleden in een array zitten met al de info van die persoon. 
+
+![Data 1](./docs/read-me-img/data-1.png)
+
+Bij de tracks wordt de data van de Spotify Rapid API gebruikt. Hiervoor wordt elk liedje opgehaald met Get Tracks. Elk teamlid kiest 5 liedjes uit voor de dataset. Dan op Rapid API moet je de ID van het nummer via Spotify gebruiken om de nummers te krijgen. Dan kopiëren we de data die we krijgen van dat ene nummer en maken we handmatig een array van de 5 nummers bij elk teamlid.  
+
+![Data 2](./docs/read-me-img/data-2.png)
+
+![Data 2](./docs/read-me-img/rapid-api-spotify.png)
+
+## Versie 1
 **Members**
 ![Members](./docs/read-me-img/v-1-members.png)
 
@@ -48,12 +60,12 @@ Als de data nog niet helemaal geladen is dan we een loading state.
 
 Deze aanpassingen zijn gedaan op aparte branches. We gingen eerst de branche van team mergen met main. Daarna die van songs. Er waren conflicts met main maar die konden we makkelijk aanpassen. Wanneer de 2 branches waren gemerged was er een conflict met de styling. Articles waren los gezet zoals: article {} maar het moest zijn: .personeelInfo article {}. Dat was snel te zien waardoor het mergen en aanpassen niet lang duurde.
 
-### Versie 2
+## Versie 2
 Met wat styling aanpassingen en gefetchte data ziet de site er tot nu toe zo er uit:
 
 ![Versie 2](./docs/read-me-img/v-2.png)
 
-### Versie 3
+## Versie 3
 Het is mogelijk om de nummers te sorteren en te filteren. Ook is in deze versie gemaakt dat de bachground de img heeft van de cover van het liedje. 
 
 **Sorteren**
@@ -70,15 +82,36 @@ Het is mogelijk om de nummers te sorteren en te filteren. Ook is in deze versie 
 
 ![Filter en sort](./docs/read-me-img/Filter.png)
 
-## JSON
+## Versie 4
 
-De dataset ziet er als volgt uit waarbij de teamleden in een array zitten met al de info van die persoon. 
+De officiele versie ziet er als volgt uit waarbij de members wordt getoond. De namen worden uit ieder zijn persoonlijke app getoond. De nummers kan je filteren en sorteren. Als je klikt op een nummer, wordt het liedje afgespeeld en wordt de cd gedraaid.
 
-![Data 1](./docs/read-me-img/data-1.png)
+![Versie 4](./docs/read-me-img/v-3.png)
 
-Bij de tracks wordt de data van de Spotify Rapid API gebruikt. Hiervoor wordt elk liedje opgehaald met Get Tracks. Elk teamlid kiest 5 liedjes uit voor de dataset. Dan op Rapid API moet je de ID van het nummer via Spotify gebruiken om de nummers te krijgen. Dan kopiëren we de data die we krijgen van dat ene nummer en maken we handmatig een array van de 5 nummers bij elk teamlid.  
+## Error
 
-![Data 2](./docs/read-me-img/data-2.png)
+Xiao Nan haar info.json kan niet worden opgehaald omdat zij deployt op Render. De error is ook als volgt dat de url niet kan worden opgehaald. 
 
-![Data 2](./docs/read-me-img/rapid-api-spotify.png)
+![Error](./docs/read-me-img/error.png)
+
+Dus nu hebben wij in de code het volgende om alleen haar naam voor nu te faken.
+
+```js
+    // De namen van de members kunnen worden opgehaald. Maar niet die van Xiao Nan vanwege deployen op render.
+    // Nu wordt er gedaan: als info niet wordt defined door niet kunnen ophalen van Xiao haar /info.json, maak dan voor nu een neppe data aan.
+    let info;
+    try {
+      const res = await fetch(item.personalPage)
+      info = await res.json()
+      
+    } catch (error) {
+      console.error(error);
+      info = {
+        "firstName": "Xiao Nan",
+      }
+    }
+```
+
+
+
 
