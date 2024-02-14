@@ -90,11 +90,11 @@ De officiele versie ziet er als volgt uit waarbij de members wordt getoond. De n
 
 ## Error
 
-Xiao Nan haar info.json kan niet worden opgehaald omdat zij deployt op Render. De error is ook als volgt dat de url niet kan worden opgehaald. 
+Xiao Nan haar info.json kan niet worden opgehaald omdat zij deployt op Render. De error is ook als volgt dat de url niet kan worden opgehaald.
 
 ![Error](./docs/read-me-img/error.png)
 
-Dus nu hebben wij in de code het volgende om alleen haar naam voor nu te faken.
+Dus de error die nu wordt getoond klopt eigenlijk wel en hebben wij daar een oplossing voor in de code om het voor nu eventjes te faken.
 
 ```js
     // De namen van de members kunnen worden opgehaald. Maar niet die van Xiao Nan vanwege deployen op render.
