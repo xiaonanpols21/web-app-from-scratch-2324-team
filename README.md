@@ -32,9 +32,16 @@ Van de schetsen is er een wireframe gemaakt van de mobiele versie en home versie
 ## HTML CSS
 Hidde en Karenza begonnen met het maken van de HTML en CSS. Hidde doet de muziek sectie en Karenza de Team sectie.
 
+## UI stack
+
+We zijn natuurlijk allemaal bezig geweest met de ideal state, maar we moeten natuurlijk ook rekening houden met de gebruiker. 
+Als de data nog niet helemaal geladen is dan we een loading state.
+
+![Loading state](./docs/read-me-img/loading-state.png)
+
 ### Versie 1
 **Members**
-![Members](./docs/read-me-img/v-1-memebers.png)
+![Members](./docs/read-me-img/v-1-members.png)
 
 **Muziek**
 ![Songs](./docs/read-me-img/v-1-songs.png)
@@ -45,6 +52,23 @@ Deze aanpassingen zijn gedaan op aparte branches. We gingen eerst de branche van
 Met wat styling aanpassingen en gefetchte data ziet de site er tot nu toe zo er uit:
 
 ![Versie 2](./docs/read-me-img/v-2.png)
+
+### Versie 3
+Het is mogelijk om de nummers te sorteren en te filteren. Ook is in deze versie gemaakt dat de bachground de img heeft van de cover van het liedje. 
+
+**Sorteren**
+- A-z
+- Year
+- Streams
+
+**Filteren**
+- Hp-hop
+- K-pop
+- Latin
+- Pop
+- Techno
+
+![Filter en sort](./docs/read-me-img/Filter.png)
 
 ## JSON
 
@@ -57,3 +81,4 @@ Bij de tracks wordt de data van de Spotify Rapid API gebruikt. Hiervoor wordt el
 ![Data 2](./docs/read-me-img/data-2.png)
 
 ![Data 2](./docs/read-me-img/rapid-api-spotify.png)
+

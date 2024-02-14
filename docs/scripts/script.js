@@ -1,23 +1,27 @@
 // loading state
-document.addEventListener("DOMContentLoaded", function () { //Laat de DOM eerst inladen
-    setTimeout(function () {
-        hideLoading(); 
-    }, 1000); // 1 sec wachten tot we hideLoading functie aanroepen
+document.addEventListener("DOMContentLoaded", function () {
+  //Laat de DOM eerst inladen
+  setTimeout(function () {
+    hideLoading();
+  }, 1000); // 1 sec wachten tot we hideLoading functie aanroepen
 });
 
-function hideLoading() { // functie voor hideLoading
-    var loadingContainer = document.getElementById("loadingContainer"); // defineer de loading container met de id: loading container 
-    var content = document.querySelector("main"); // haal de content "main" op
+function hideLoading() {
+  // functie voor hideLoading
+  var loadingContainer = document.getElementById("loadingContainer"); // defineer de loading container met de id: loading container
+  var content = document.querySelector("main"); // haal de content "main" op
 
-    loadingContainer.style.display = "none"; // verberg dan de loading container 
-    content.style.display = "grid"; // toon de content in grid stijl
+  loadingContainer.style.display = "none"; // verberg dan de loading container
+  content.style.display = "grid"; // toon de content in grid stijl
 }
 
-async function siteInfo() { //Functie die de JSON file gaat ophalen en waardes gaat veranderen
-    const response = await fetch("team.json"); //Maakt de variabele response aan door het JSON bestand te fetchen (en te wachten tot het binnen is doormiddel van await)
-    const siteJson = await response.json(); //Zet het JSON bestand wat binnen komt als text om naar een JSON
-    // document.getElementById('namePlaceholder').innerText = siteJson.name; //Zoekt het element met de Id namePlaceholder op en past de waarde aan gebaseerd op wat er in de variabele siteJson staat met de key (idk of het ook zo heet in JSON) name
-    // console.log(siteJson)
+async function siteInfo() {
+  //Functie die de JSON file gaat ophalen en waardes gaat veranderen
+  const response = await fetch("team.json"); //Maakt de variabele response aan door het JSON bestand te fetchen (en te wachten tot het binnen is doormiddel van await)
+  const siteJson = await response.json(); //Zet het JSON bestand wat binnen komt als text om naar een JSON
+  // document.getElementById('namePlaceholder').innerText = siteJson.name; //Zoekt het element met de Id namePlaceholder op en past de waarde aan gebaseerd op wat er in de variabele siteJson staat met de key (idk of het ook zo heet in JSON) name
+  // console.log(siteJson)
+
 
     //Voer de functie uit als de data is ingeladen
     personalInfoData(siteJson); 
@@ -27,22 +31,42 @@ async function siteInfo() { //Functie die de JSON file gaat ophalen en waardes g
 }
 togglePlayPauze()
 
+  //Voer de functie uit als de data is ingeladen
+
+  // Plaats dit op een plek zoals een functie die de data kan ontvangen of al heeft bijv listenSort()
+  document.getElementById("sort").addEventListener("change", function () {
+    const sortBy = this.value;
+    const filterBy = document.getElementById("filter").value;
+    muziekData(siteJson, sortBy, filterBy);
+  });
+  document.getElementById("filter").addEventListener("change", function () {
+    const filterBy = this.value;
+    const sortBy = document.getElementById("sort").value;
+    muziekData(siteJson, sortBy, filterBy);
+  });
+  personalInfoData(siteJson);
+  muziekData(siteJson);
+}
+siteInfo(); //Voert de functie uit
+
+
 // Bron: https://www.w3schools.com/jsref/met_node_insertadjacenthtml.asp
-function personalInfoData(siteJson) { //Maak een functie met als parameter de data.
-    const personalInfoSection = document.querySelector(".personalInfo"); // Select de dom van waar de content moet omen
+function personalInfoData(siteJson) {
+  //Maak een functie met als parameter de data.
+  const personalInfoSection = document.querySelector(".personalInfo"); // Select de dom van waar de content moet omen
 
-    Object.values(siteJson.members).forEach(item => { // Doe een foreach op de mensen array
+  Object.values(siteJson.members).forEach((item) => {
+    // Doe een foreach op de mensen array
 
-        // Maak variables aan met de juiste data die opgehaald moet worden
-        const name = item.name;
-        const img = item.image;
-        const date = item.geboortedatum;
-        const city = item.woonplaats;
-        const genre = item.favoriet_genre;
+    // Maak variables aan met de juiste data die opgehaald moet worden
+    const name = item.name;
+    const img = item.image;
+    const date = item.geboortedatum;
+    const city = item.woonplaats;
+    const genre = item.favoriet_genre;
 
-        // Maak een variable html aan om een soort van template te maken can de dom.
-        const html = 
-        `
+    // Maak een variable html aan om een soort van template te maken can de dom.
+    const html = `
         <article>
             <h3>${name}</h3>
             <ul>
@@ -53,34 +77,47 @@ function personalInfoData(siteJson) { //Maak een functie met als parameter de da
             <img src="${img}" alt="${name}">
         </article>
         `;
-        personalInfoSection.insertAdjacentHTML("beforeend", html);
-    });
+    personalInfoSection.insertAdjacentHTML("beforeend", html);
+  });
 
-    // Met ${} plaats je de data op de juiste plek.
-    // insertAdjacentHTML is een methode om html tekst toe te voegen. beforeend is een parameter die zegt waar de html gezet moet worden. 
-};
+  // Met ${} plaats je de data op de juiste plek.
+  // insertAdjacentHTML is een methode om html tekst toe te voegen. beforeend is een parameter die zegt waar de html gezet moet worden.
+}
 
 // Bron: Chatgpt
 // Zie prompts: https://chemical-bunny-323.notion.site/Chat-GPT-Documentatie-d93ea570990b4754bec559e9bfcc2217#0c8f89c5cf764153b708b3542425c72f
-function muziekData(siteJson) {
-    const songsSection = document.querySelector(".songs");
 
-    siteJson.members.forEach(user => { // Zoe een foreach op de users
-        user.tracks.forEach(item => { // Doe een foreach op tracks van elke user
-            const name = item.name;
-            const artist = item.artists[0].name;
-            const album = item.album.name;
-            const year = item.album.release_date;
-            const img = item.album.images[1].url;
-            const genre = item.album.genre;
-            const userImg = user.image; 
-            const userName = user.name;
-            const previewUrl = item.preview_url
+function muziekData(siteJson, sortBy, filterBy) {
+  const songsSection = document.querySelector(".songList"); // Kies een element waar de songs in moeten en zorg dat die semantisch beschrijft wat het moet zijn
 
-            const html = 
-            ` 
-            <article class="song">
-                <audio id="audioPreview" src=${previewUrl} preload="auto"></audio>
+  //localiseer de plek waar de nummers moeten staan
+
+  const allTracks = siteJson.members.flatMap((user) => user.tracks); //alle tracks worden opgehaald uit de Json
+
+  const sortedTracks = sortTracks(allTracks, sortBy);
+
+  const sortedFilteredTracks = filterTracks(sortedTracks, filterBy);
+  console.log("Songs sorted by " + sortBy + " and filtered by " + filterBy);
+
+  songsSection.innerHTML = "";
+  console.log(sortedFilteredTracks);
+  sortedFilteredTracks.forEach((item) => {
+    //forEach loop om van elk nummer de benodigde info op te halen
+    const name = item.name;
+    const artist = item.artists[0].name;
+    const album = item.album.name;
+    const year = item.album.release_date;
+    const img = item.album.images[1].url;
+    const genre = item.album.genre;
+    const user = siteJson.members.find((member) =>
+      member.tracks.includes(item)
+    ); // de users worden opgehaald om bij elk nummer de user weer te geven
+    const userImg = user.image;
+    const userName = user.name;
+
+    const html = ` 
+            <article>
+
                 <h2>${name}</h2>
                 <ul>
                     <li>Artist: ${artist}</li>
@@ -97,11 +134,31 @@ function muziekData(siteJson) {
                 <div></div>
                 <img src="${img}" alt="${name}">
             </article>
-            `;
-            songsSection.insertAdjacentHTML("beforeend", html);
-        });
-    });
+            `; // de info van de nummers worden geplaatst in de html
+    songsSection.insertAdjacentHTML("beforeend", html);
+  });
 }
+
+// Zie prompts: https://detailed-tuberose-64a.notion.site/Duck-Angles-09c1e226f6f14c0d8082e7d68835bbd0#7d2a3426e1524e1a861306dabbe60135
+function sortTracks(tracks, sortBy) {
+  //functie om de tracks te sorteren
+  if (sortBy === "releasedate") {
+    return tracks.sort((a, b) =>
+      a.album.release_date.localeCompare(b.album.release_date)
+    ); //maakt een nieuwe array aan gesorteerd op release
+  } else if (sortBy === "streams") {
+    //door de popularity te vergelijken kan je sorteren op streams
+    // ZIe prompts: https://detailed-tuberose-64a.notion.site/Duck-Angles-09c1e226f6f14c0d8082e7d68835bbd0#23f679b2a66443ac93588d43f7ff2a9b
+    return tracks.sort((a, b) => {
+      const popularityA = String(a.popularity); //van beide waardes moet een string gemaakt worden
+      const popularityB = String(b.popularity);
+      return popularityB.localeCompare(popularityA); //waardes omgedraaid zodat meest populair bovenaan staat
+    });
+  } else {
+    return tracks.sort((a, b) => a.name.localeCompare(b.name)); // anders op alfabet sorteren
+  }
+}
+
 
 async function togglePlayPauze(){ //Functie om de muziek af te spelen, te pauzeren en de class playing toe te voegen of te verwijderen.
     await siteInfo(); //Wacht tot de siteInfo functie is uitgevoerd zodat alle html is ingeladen
@@ -122,4 +179,42 @@ async function togglePlayPauze(){ //Functie om de muziek af te spelen, te pauzer
             }
         })
     });
+
+// ZIe prompts: https://detailed-tuberose-64a.notion.site/Duck-Angles-09c1e226f6f14c0d8082e7d68835bbd0#387bbae3175a440bbcb5fb511e724ac9
+function filterTracks(sortedTracks, filterBy) {
+  //functie om de tracks te filteren
+  if (filterBy === "hiphop") {
+    // if statements per genre
+    const sortedFilteredTracks = sortedTracks.filter(
+      (track) => track.album.genre === "Hip-hop" //de tracks worden gefilterd en gereturned
+    );
+    return sortedFilteredTracks;
+  }
+  if (filterBy === "kpop") {
+    const sortedFilteredTracks = sortedTracks.filter(
+      (track) => track.album.genre === "K-pop"
+    );
+    return sortedFilteredTracks;
+  }
+  if (filterBy === "latin") {
+    const sortedFilteredTracks = sortedTracks.filter(
+      (track) => track.album.genre === "Latin"
+    );
+    return sortedFilteredTracks;
+  }
+  if (filterBy === "pop") {
+    const sortedFilteredTracks = sortedTracks.filter(
+      (track) => track.album.genre === "Pop"
+    );
+    return sortedFilteredTracks;
+  }
+  if (filterBy === "techno") {
+    const sortedFilteredTracks = sortedTracks.filter(
+      (track) => track.album.genre === "Techno"
+    );
+    return sortedFilteredTracks;
+  } else {
+    return sortedTracks; //geen filter geselecteerd betekent alle nummers tonen
+  }
+
 }
